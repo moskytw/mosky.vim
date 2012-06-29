@@ -15,6 +15,7 @@ endfor
 map <leader><leader> :tabnext<CR>
 set cmdheight=1
 set nu
+set mouse=a " hold shift to select and copy text
 
 " Colors
 
