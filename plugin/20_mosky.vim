@@ -35,5 +35,11 @@ if exists(':FufFile')
     map <leader>f :FufFile **/<CR>
 endif
 
+" ctrlp.vim
+if exists(':CtrlP')
+    map <leader>e :tabnew<CR>:CtrlP<CR>
+    map <leader>f :CtrlP<CR>
+endif
+
 " snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/moskysvim/snippets/"

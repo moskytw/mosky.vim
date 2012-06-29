@@ -18,11 +18,12 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'FuzzyFinder'
 Bundle 'python.vim'
 Bundle 'AutoComplPop'
 " Bundle 'desert.vim'
