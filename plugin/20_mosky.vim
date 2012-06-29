@@ -22,6 +22,11 @@ set mouse=a " hold shift to select and copy text
 set t_Co=256
 color moskyfav
 
+" Competition
+
+set completeopt=menu,menuone,longest
+set pumheight=15
+
 " Specific File Type
 
 autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
