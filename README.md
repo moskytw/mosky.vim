@@ -38,4 +38,4 @@ It contains a .vimrc that records the other plugins it depends on. Copy it and u
     $ vim
     :BundleInstall
 
-[Vindle]: https://github.com/gmarik/vundle/
+[Vundle]: https://github.com/gmarik/vundle/
