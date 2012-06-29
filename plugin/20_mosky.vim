@@ -6,13 +6,13 @@ nmap ; :
 map <down> gj
 map <up> gk
 
+map <leader><leader> :tabnext<CR>
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
 
 " Interface
 
-map <leader><leader> :tabnext<CR>
 set cmdheight=1
 set nu
 set mouse=a " hold shift to select and copy text
