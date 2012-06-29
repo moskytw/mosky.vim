@@ -3,6 +3,8 @@
 " Shortcut
 
 nmap ; :
+map <down> gj
+map <up> gk
 
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
