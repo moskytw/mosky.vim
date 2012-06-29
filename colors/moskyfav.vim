@@ -341,12 +341,14 @@ else
     hi Error         cterm=bold ctermfg=7 ctermbg=1
 endif
 
-hi TabLine     cterm=none ctermfg=none   ctermbg=none
-hi TabLineSel  cterm=none ctermfg=yellow ctermbg=none
-hi TabLineFill cterm=none ctermfg=none   ctermbg=none
-hi Pmenu       cterm=none ctermfg=none   ctermbg=black
-hi PmenuSel    cterm=bold ctermbg=black  ctermfg=yellow
-hi Visual      cterm=none ctermfg=none   ctermbg=black
-hi Folded      cterm=bold ctermfg=yellow ctermbg=none
+hi TabLine       cterm=none ctermfg=none   ctermbg=none
+hi TabLineSel    cterm=none ctermfg=yellow ctermbg=none
+hi TabLineFill   cterm=none ctermfg=none   ctermbg=none
+hi Pmenu         cterm=none ctermfg=none   ctermbg=black
+hi PmenuSel      cterm=bold ctermbg=black  ctermfg=yellow
+hi Visual        cterm=none ctermfg=none   ctermbg=black
+hi Folded        cterm=bold ctermfg=yellow ctermbg=none
+hi StatusLine    cterm=bold ctermfg=white  ctermbg=none
+hi StatusLineNC  cterm=none ctermfg=gray   ctermbg=none
 
 " vim: set fdl=0 fdm=marker:
