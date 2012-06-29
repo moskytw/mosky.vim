@@ -1,5 +1,5 @@
 " Here is the settings for Vundle
-" Find the other settings in <moskysvim>/plugin/*.vim
+" Find the other settings in <mosky.vim>/plugin/*.vim
 
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -33,7 +33,7 @@ Bundle 'surround.vim'
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
-Bundle 'moskied/moskysvim'
+Bundle 'moskied/mosky.vim'
 
 filetype plugin indent on     " required!
 "

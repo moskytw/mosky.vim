@@ -16,7 +16,7 @@ You have two ways to install it.
 
 Add the command in your `.vimrc`:
 
-    Bundle "moskied/moskysvim"
+    Bundle "moskied/mosky.vim"
 
 Then, use [Vundle][] to install:
 
@@ -27,18 +27,18 @@ Then, use [Vundle][] to install:
 
 If you are using the [Vundle][] or [pathgen][]:
 
-    $ git clone https://github.com/moskied/moskysvim ~/.vim/bundle/moskysvim
+    $ git clone https://github.com/moskied/mosky.vim ~/.vim/bundle/mosky.vim
 
-If you don't have any plugin manager, just download it and copy files under `moskysvim` to your `~/.vim` folder.
+If you don't have any plugin manager, just download it and copy files under `mosky.vim` to your `~/.vim` folder.
 
 ### Install All of Things
 
-The [Vundle][] plugins list is recoded on `moskysvim/vimrc`. Copy the plugins you wants and use [Vundle][] to install them.
+The [Vundle][] plugins list is recoded on `mosky.vim/vimrc`. Copy the plugins you wants and use [Vundle][] to install them.
 
 Here are the steps to install all of the plugins:
 
     $ cd ~/.vim
-    $ ln -s bundle/moskysvim/vimrc .vimrc
+    $ ln -s bundle/mosky.vim/vimrc .vimrc
     $ vim
     :BundleInstall
 

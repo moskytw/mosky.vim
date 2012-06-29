@@ -46,4 +46,4 @@ if exists(':CtrlP')
 endif
 
 " snipMate
-let g:snippets_dir = $HOME."/.vim/bundle/moskysvim/snippets/"
+let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
