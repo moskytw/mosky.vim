@@ -5,8 +5,8 @@ It includes my settings and [Vundle][] plugins list.
 
 It is designed as an independent vim plugin. You can install it without any other plugins.
 
-Usage
------
+Installation
+------------
 
 ### Install as An Independent Plugin
 
