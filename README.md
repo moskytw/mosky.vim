@@ -10,7 +10,7 @@ See the `moskysvim/vimrc` to get the full list of plugins.
 Usage
 -----
 
-It use [Vundle][] to manage plugins. Recommend to prepare [Vundle][] first.
+It uses [Vundle][] to manage plugins. Recommend to prepare [Vundle][] first.
 
 ### Install as A Independent Plugin
 
