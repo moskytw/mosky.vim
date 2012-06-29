@@ -33,6 +33,7 @@ Bundle 'surround.vim'
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
+Bundle 'moskied/tagit.vim'
 Bundle 'moskied/mosky.vim'
 
 filetype plugin indent on     " required!
