@@ -29,6 +29,7 @@ Bundle 'AutoComplPop'
 " Bundle 'desert.vim'
 Bundle 'pyflakes.vim'
 Bundle 'surround.vim'
+Bundle 'taglist.vim'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...

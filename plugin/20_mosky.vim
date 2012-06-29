@@ -51,5 +51,10 @@ if exists(':CtrlP')
     let g:ctrlp_follow_symlinks = 1
 endif
 
+" taglist.vim
+if exists(':TlistToggle')
+    map <leader>tl :TlistToggle<CR>
+endif
+
 " snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
