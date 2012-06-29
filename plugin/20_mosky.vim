@@ -37,8 +37,11 @@ endif
 
 " ctrlp.vim
 if exists(':CtrlP')
-    map <leader>e :tabnew<CR>:CtrlP<CR>
-    map <leader>f :CtrlP<CR>
+    " use Ctrl+P
+    "map <leader>e :tabnew<CR>:CtrlP<CR>
+    " use Ctrl+T to open in new tab
+    "map <leader>f :CtrlP<CR>
+    let g:ctrlp_clear_cache_on_exit = 0
 endif
 
 " snipMate
