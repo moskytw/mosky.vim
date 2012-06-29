@@ -43,6 +43,7 @@ if exists(':CtrlP')
     " use Ctrl+T to open in new tab
     "map <leader>f :CtrlP<CR>
     let g:ctrlp_clear_cache_on_exit = 0
+    let g:ctrlp_follow_symlinks = 1
 endif
 
 " snipMate
