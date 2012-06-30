@@ -19,6 +19,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
+Bundle 'majutsushi/tagbar'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
@@ -29,7 +30,7 @@ Bundle 'AutoComplPop'
 " Bundle 'desert.vim'
 Bundle 'pyflakes.vim'
 Bundle 'surround.vim'
-Bundle 'taglist.vim'
+"Bundle 'taglist.vim'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...

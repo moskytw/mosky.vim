@@ -56,5 +56,10 @@ if exists(':TlistToggle')
     map <leader>tl :TlistToggle<CR>
 endif
 
+" tagbar
+if exists(':TagbarToggle')
+    map <leader>tl :TagbarToggle<CR>
+endif
+
 " snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
