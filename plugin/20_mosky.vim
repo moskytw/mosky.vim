@@ -29,6 +29,7 @@ set pumheight=15
 
 " Specific File Type
 
+autocmd BufNewFile,BufRead *.mako set filetype=mako
 autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
 
 autocmd BufWritePost *vimrc,*.vim :so %
