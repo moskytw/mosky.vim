@@ -50,6 +50,10 @@ if exists(':CtrlP')
     "map <leader>f :CtrlP<CR>
     let g:ctrlp_clear_cache_on_exit = 0
     let g:ctrlp_follow_symlinks = 1
+    let g:ctrlp_prompt_mappings = {
+      \ 'AcceptSelection("e")': ['<c-o>'],
+      \ 'AcceptSelection("t")': ['<cr>', '<c-t>'],
+      \ }
 endif
 
 " taglist.vim
