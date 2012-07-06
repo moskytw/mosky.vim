@@ -28,7 +28,7 @@ Bundle 'L9'
 Bundle 'python.vim'
 Bundle 'AutoComplPop'
 " Bundle 'desert.vim'
-Bundle 'pyflakes.vim'
+" Bundle 'pyflakes.vim' " it's a little annoying
 Bundle 'surround.vim'
 Bundle 'mako.vim'
 "Bundle 'taglist.vim'
