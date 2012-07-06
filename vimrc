@@ -30,6 +30,7 @@ Bundle 'AutoComplPop'
 " Bundle 'desert.vim'
 " Bundle 'pyflakes.vim' " it's a little annoying
 Bundle 'matchit.zip'
+Bundle 'python_match.vim'
 Bundle 'surround.vim'
 Bundle 'mako.vim'
 "Bundle 'taglist.vim'
