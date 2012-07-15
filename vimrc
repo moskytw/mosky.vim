@@ -33,6 +33,7 @@ Bundle 'matchit.zip'
 Bundle 'python_match.vim'
 Bundle 'surround.vim'
 Bundle 'mako.vim'
+Bundle 'nginx.vim'
 "Bundle 'taglist.vim'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'

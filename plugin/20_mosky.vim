@@ -34,6 +34,8 @@ autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try
 
 autocmd BufWritePost *vimrc,*.vim :so %
 
+autocmd BufNewFile,BufRead */nginx/* set filetype=nginx 
+
 " About Plugins
 
 " FuzzyFinder
