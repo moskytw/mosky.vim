@@ -350,5 +350,6 @@ hi Visual        cterm=none ctermfg=none   ctermbg=black
 hi Folded        cterm=bold ctermfg=yellow ctermbg=none
 hi StatusLine    cterm=bold ctermfg=white  ctermbg=none
 hi StatusLineNC  cterm=none ctermfg=gray   ctermbg=none
+hi VertSplit     cterm=none ctermfg=gray   ctermbg=none
 
 " vim: set fdl=0 fdm=marker:
