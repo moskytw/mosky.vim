@@ -3,6 +3,7 @@
 " Shortcut
 
 nmap ; :
+cmap ; suspend<CR>
 map <down> gj
 map <up> gk
 
