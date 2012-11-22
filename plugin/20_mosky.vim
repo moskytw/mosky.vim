@@ -2,6 +2,8 @@
 
 " Shortcut
 
+map <F8> :setlocal paste!<cr>
+map <F7> :setlocal spell!<cr>
 nmap ; :
 cmap ;<CR> w<CR>:suspend<CR>
 map <down> gj
