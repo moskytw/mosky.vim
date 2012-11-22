@@ -38,6 +38,8 @@ autocmd BufNewFile,BufRead */nginx/* set filetype=nginx
 
 " About Plugins
 
+" let g:pydiction_location='~/.vim/bundle/Pydiction/complete-dict'
+
 " FuzzyFinder
 if exists(':FufFile')
     map <leader>e :tabnew<CR>:FufFile **/<CR>
