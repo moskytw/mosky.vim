@@ -27,6 +27,7 @@ Bundle 'L9'
 "Bundle 'FuzzyFinder'
 Bundle 'python.vim'
 Bundle 'AutoComplPop'
+" Bundle 'Pydiction'
 " Bundle 'desert.vim'
 " Bundle 'pyflakes.vim' " it's a little annoying
 Bundle 'matchit.zip'
