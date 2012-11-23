@@ -8,8 +8,8 @@ nnoremap <F7> :setlocal spell!<cr>
 nnoremap ; :
 nnoremap : ;
 cnoremap ;<CR> w<CR>:suspend<CR>
-map <down> gj
-map <up> gk
+noremap <down> gj
+noremap <up> gk
 
 map <leader><leader> :tabnext<CR>
 for i in range(1, 9)
