@@ -11,7 +11,7 @@ cnoremap ;<CR> w<CR>:suspend<CR>
 noremap <down> gj
 noremap <up> gk
 
-map <leader><leader> :tabnext<CR>
+noremap <leader><leader> :tabnext<CR>
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
