@@ -2,8 +2,8 @@
 
 " Shortcut
 
-map <F8> :setlocal paste!<cr>
-map <F7> :setlocal spell!<cr>
+nnoremap <F8> :setlocal paste!<cr>
+nnoremap <F7> :setlocal spell!<cr>
 " swap the function of : and ;
 nnoremap ; :
 nnoremap : ;
