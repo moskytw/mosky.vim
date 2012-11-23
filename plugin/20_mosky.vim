@@ -2,11 +2,11 @@
 
 " Shortcut
 
-nnoremap <F8> :setlocal paste!<cr>
-nnoremap <F7> :setlocal spell!<cr>
+noremap <F8> :setlocal paste!<cr>
+noremap <F7> :setlocal spell!<cr>
 " swap the function of : and ;
-nnoremap ; :
-nnoremap : ;
+noremap ; :
+noremap : ;
 cnoremap ;<CR> w<CR>:suspend<CR>
 noremap <down> gj
 noremap <up> gk
