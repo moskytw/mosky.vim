@@ -12,36 +12,39 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
+
 " original repos on github
-"Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
+
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
+Bundle 'moskytw/tagit.vim'
+Bundle 'moskytw/mosky.vim'
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
+
+" non github repos
+
+"Bundle 'git://git.wincent.com/command-t.git'
+
 " vim-scripts repos
+
 Bundle 'L9'
-"Bundle 'FuzzyFinder'
 Bundle 'python.vim'
 Bundle 'AutoComplPop'
-" Bundle 'Pydiction'
-" Bundle 'desert.vim'
-" Bundle 'pyflakes.vim' " it's a little annoying
 Bundle 'matchit.zip'
 Bundle 'python_match.vim'
 Bundle 'surround.vim'
 Bundle 'mako.vim'
 Bundle 'nginx.vim'
+"Bundle 'FuzzyFinder'
+"Bundle 'Pydiction'
+"Bundle 'desert.vim'
+"Bundle 'pyflakes.vim' " it's a little annoying
 "Bundle 'taglist.vim'
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" ...
-
-Bundle 'moskied/tagit.vim'
-Bundle 'moskied/mosky.vim'
 
 filetype plugin indent on     " required!
 "
