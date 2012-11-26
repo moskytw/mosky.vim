@@ -7,6 +7,7 @@ noremap <F7> :setlocal spell!<cr>
 " swap the function of : and ;
 noremap ; :
 " noremap : ;
+noremap . ;
 cnoremap ;<CR> w<CR>:suspend<CR>
 noremap <down> gj
 noremap <up> gk
