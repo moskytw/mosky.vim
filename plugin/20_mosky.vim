@@ -4,7 +4,7 @@
 
 noremap <F8> :setlocal paste!<cr>
 noremap <F7> :setlocal spell!<cr>
-noremap ! :!
+noremap ! :w<CR>:!
 " swap the function of : and ;
 " noremap ; :
 " noremap : ;
