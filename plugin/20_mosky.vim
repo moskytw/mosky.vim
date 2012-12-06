@@ -9,7 +9,7 @@ noremap ! :w<CR>:!
 " noremap ; :
 " noremap : ;
 " noremap . ;
-noremap <ESC><ESC> w<CR>:suspend<CR>
+" noremap <ESC><ESC> w<CR>:suspend<CR>
 noremap <down> gj
 noremap <up> gk
 
