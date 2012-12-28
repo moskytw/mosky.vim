@@ -84,3 +84,5 @@ if exists(':CtrlP')
 endif
 " 2. snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
+" 3. for syntax/python.vim
+let python_highlight_all = 1
