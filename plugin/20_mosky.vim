@@ -91,3 +91,8 @@ endif
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
 " 3. for syntax/python.vim
 let python_highlight_all = 1
+autocmd FileType python
+            \ hi link pythonCoding Comment |
+            \ hi link pythonPreCondit PreProc |
+            " python.vim has some bug
+            " \ hi link pythonRun Comment |
