@@ -16,7 +16,7 @@ noremap <leader>q :q!<CR>
 noremap <leader>d :bd<CR>
 noremap <leader>X :xa<CR>
 noremap <leader>Q :qa!<CR>
-noremap <leader>b :buffers<CR>
+noremap <leader>b :buffers<CR>:b
 " 2. tab-related
 noremap <leader>e :tabedit <C-R>=expand("%:p:h")<CR>/
 noremap <leader><leader> :tabnext<CR>
