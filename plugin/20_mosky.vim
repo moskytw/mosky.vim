@@ -11,6 +11,7 @@ inoremap <C-Z> <ESC><C-Z>
 " uses leader to make shortcut for common commands
 " 1. daily routines
 noremap <leader>z :w<CR><C-Z>
+noremap <leader>w :w<CR>
 noremap <leader>x :x<CR>
 noremap <leader>q :q!<CR>
 noremap <leader>d :bd<CR>
