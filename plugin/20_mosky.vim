@@ -46,8 +46,9 @@ imap <F12> <C-O><F12>
 " treats a wrapped line as different lines
 noremap <down> gj
 noremap <up> gk
-imap <down> <C-O><down>
-imap <up> <C-O><up>
+" the following two map will break the function of competition
+"imap <down> <C-O><down>
+"imap <up> <C-O><up>
 noremap <C-down> 3<C-E>
 noremap <C-up> 3<C-Y>
 imap <C-down> <C-O><C-down>
