@@ -153,6 +153,25 @@ let g:colors_name="moskyfav3"
 " start to set the colors
 set background=dark
 
+hi Normal     ctermfg=231
+
+hi Statement  ctermfg=222 cterm=bold
+hi Identifier ctermfg=120
+hi Comment    ctermfg=153
+hi PreProc    ctermfg=203
+
+hi Constant   ctermfg=217
+hi Special    ctermfg=203 cterm=underline
+
+hi Type       ctermfg=222
+
+hi Underlined cterm=underline
+hi Ignore     ctermfg=240
+hi Error      ctermfg=88  ctermbg=231 cterm=reverse
+hi Todo       ctermfg=226 ctermbg=196 cterm=reverse
+
 " TODO: ...
+
+hi ColorColumn ctermbg=232
 
 " vim: set fdl=0 fdm=marker:
