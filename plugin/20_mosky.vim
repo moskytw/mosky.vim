@@ -62,6 +62,7 @@ imap <C-up> <C-O><C-up>
 set cmdheight=1
 set nu
 set mouse=a " hold shift to select and copy text
+set colorcolumn=83
 
 " colors 
 
