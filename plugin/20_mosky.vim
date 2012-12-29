@@ -8,6 +8,9 @@ let mapleader = '\'
 " makes Ctrl-Z work in insert mode
 inoremap <C-Z> <ESC><C-Z>
 
+" open help in new tab
+cabbrev h tab h
+
 " uses leader to make shortcut for common commands
 " 1. daily routines
 noremap <leader>z :w<CR><C-Z>
