@@ -5,7 +5,8 @@
 
 CONVENTIONAL_GROUP_NAMES = ['Comment', 'Constant', 'String', 'Character', 'Number', 'Boolean', 'Float', 'Identifier', 'Function', 'Statement', 'Conditional', 'Repeat', 'Label', 'Operator', 'Keyword', 'Exception', 'PreProc', 'Include', 'Define', 'Macro', 'PreCondit', 'Type', 'StorageClass', 'Structure', 'Typedef', 'Special', 'SpecialChar', 'Tag', 'Delimiter', 'SpecialComment', 'Debug', 'Underlined', 'Ignore', 'Error', 'Todo']
 
-VIM_GROUP_NAMES = ['ColorColumn', 'Conceal', 'Cursor', 'CursorIM', 'CursorColumn', 'CursorLine', 'Directory', 'DiffAdd', 'DiffChange', 'DiffDelete', 'DiffText', 'ErrorMsg', 'VertSplit', 'Folded', 'FoldColumn', 'SignColumn', 'IncSearch', 'LineNr', 'CursorLineNr', 'MatchParen', 'ModeMsg', 'MoreMsg', 'NonText', 'Normal', 'Pmenu', 'PmenuSel', 'PmenuSbar', 'PmenuThumb', 'Question', 'Search', 'SpecialKey', 'SpellBad', 'SpellCap', 'SpellLocal', 'SpellRare', 'StatusLine', 'StatusLineNC', 'TabLine', 'TabLineFill', 'TabLineSel', 'Title', 'Visual', 'VisualNOS', 'WarningMsg', 'WildMenu', 'The', 'For', 'Win', 'Menu', 'Scrollbar', 'Tooltip']
+VIM_GROUP_NAMES = ['ColorColumn', 'Conceal', 'Cursor', 'CursorIM', 'CursorColumn', 'CursorLine', 'Directory', 'DiffAdd', 'DiffChange', 'DiffDelete', 'DiffText', 'ErrorMsg', 'VertSplit', 'Folded', 'FoldColumn', 'SignColumn', 'IncSearch', 'LineNr', 'CursorLineNr', 'MatchParen', 'ModeMsg', 'MoreMsg', 'NonText', 'Normal', 'Pmenu', 'PmenuSel', 'PmenuSbar', 'PmenuThumb', 'Question', 'Search', 'SpecialKey', 'SpellBad', 'SpellCap', 'SpellLocal', 'SpellRare', 'StatusLine',
+'StatusLineNC', 'TabLine', 'TabLineFill', 'TabLineSel', 'Title', 'Visual', 'VisualNOS', 'WarningMsg', 'WildMenu', 'Menu', 'Scrollbar', 'Tooltip']
 
 # --- end ---
 

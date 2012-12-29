@@ -12,7 +12,7 @@ to_collect_patterns = iter([
     (
         re.compile("ColorColumn\tused for the columns set with 'colorcolumn'"),
         re.compile("Tooltip\t\tCurrent font, background and foreground of the tooltips."),
-        re.compile("^((?:[A-Z][A-Za-z]+)+)"),
+        re.compile("^((?:[A-Z][A-Za-z]+)+)\t"),
     ),
 ])
 
