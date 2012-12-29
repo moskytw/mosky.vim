@@ -28,7 +28,6 @@ if __name__ == '__main__':
     print '" clear conventional groups'
     print '" {{{'
     gen_hi_clear(CONVENTIONAL_GROUP_NAMES)
-    print
     print '" }}}'
     print
     print '" clear vim\'s groups'
