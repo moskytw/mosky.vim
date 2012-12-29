@@ -68,6 +68,7 @@ set colorcolumn=83
 
 set t_Co=256
 color moskyfav3
+syn keyword Todo TODO FIXME XXX NOTE contained
 
 " folding
 
