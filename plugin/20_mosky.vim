@@ -66,11 +66,12 @@ set mouse=a " hold shift to select and copy text
 " colors 
 
 set t_Co=256
-color moskyfav
+color moskyfav3
 
 " folding
 
-set foldmethod=syntax
+" folding is annoying for me
+"set foldmethod=syntax
 set foldnestmax=2
 
 " competition
@@ -81,7 +82,7 @@ set pumheight=15
 " specific file type
 
 autocmd BufNewFile,BufRead *.mako set filetype=mako
-autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class foldmethod=indent
+autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class "foldmethod=indent
 autocmd BufNewFile,BufRead */nginx/* set filetype=nginx 
 " autocmd BufWritePost *vimrc,*.vim :so %
 
