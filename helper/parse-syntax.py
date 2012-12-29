@@ -7,7 +7,8 @@ to_collect_patterns = iter([
     (
         re.compile("\*Comment"),
         re.compile("\*Todo"),
-        re.compile("((?:[A-Z][A-Za-z]+)+)"),
+        #re.compile("((?:[A-Z][A-Za-z]+)+)"),
+        re.compile("\*((?:[A-Z][A-Za-z]+)+)"),
     ),
     (
         re.compile("ColorColumn\tused for the columns set with 'colorcolumn'"),
