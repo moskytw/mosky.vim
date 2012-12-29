@@ -100,6 +100,6 @@ let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
 let python_highlight_all = 1
 autocmd FileType python
             \ hi link pythonCoding Comment |
-            \ hi link pythonPreCondit PreProc |
+            \ hi link pythonPreCondit PreCondit |
             " python.vim has some bug
             " \ hi link pythonRun Comment |
