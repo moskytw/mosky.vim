@@ -31,23 +31,7 @@ if version > 580
     endif
 endif
 " let g:colors_name="desert256"
-let g:colors_name="moskyfav"
-
-" take effect in any case
-
-hi Normal        cterm=none ctermfg=none   ctermbg=none
-"hi LineNr        ctermfg=white
-hi TabLine       cterm=none ctermfg=none   ctermbg=none
-hi TabLineSel    cterm=none ctermfg=yellow ctermbg=none
-hi TabLineFill   cterm=none ctermfg=none   ctermbg=none
-hi Pmenu         cterm=none ctermfg=none   ctermbg=black
-hi PmenuSel      cterm=bold ctermbg=black  ctermfg=yellow
-hi Search        cterm=underline ctermfg=none   ctermbg=none
-hi Visual        cterm=reverse ctermfg=none   ctermbg=none
-hi Folded        cterm=bold ctermfg=white ctermbg=none
-hi StatusLine    cterm=bold ctermfg=white  ctermbg=none
-hi StatusLineNC  cterm=none ctermfg=gray   ctermbg=none
-hi VertSplit     cterm=none ctermfg=gray   ctermbg=none
+let g:colors_name="moskyfav2012"
 
 if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " functions {{{
@@ -259,6 +243,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     endfun
     " }}}
 
+    " call <SID>X("Normal", "cccccc", "000000", "")
+    call <SID>X("Normal", "", "", "")
+
     " highlight groups
     call <SID>X("Cursor", "708090", "f0e68c", "")
     "CursorIM
@@ -268,19 +255,22 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     "DiffDelete
     "DiffText
     "ErrorMsg
-    call <SID>X("VertSplit", "c2bfa5", "", "")
-    call <SID>X("FoldColumn", "d2b48c", "", "")
-    call <SID>X("IncSearch", "", "", "reverse")
+    call <SID>X("VertSplit", "c2bfa5", "7f7f7f", "reverse")
+    call <SID>X("Folded", "ffd700", "4d4d4d", "")
+    call <SID>X("FoldColumn", "d2b48c", "4d4d4d", "")
+    call <SID>X("IncSearch", "708090", "f0e68c", "")
     "LineNr
     call <SID>X("ModeMsg", "daa520", "", "")
     call <SID>X("MoreMsg", "2e8b57", "", "")
+    " call <SID>X("NonText", "addbe7", "000000", "bold")
     call <SID>X("NonText", "addbe7", "", "bold")
     call <SID>X("Question", "00ff7f", "", "")
+    call <SID>X("Search", "f5deb3", "cd853f", "")
     call <SID>X("SpecialKey", "9acd32", "", "")
-    call <SID>X("StatusLine", "c2bfa5", "", "")
-    call <SID>X("StatusLineNC", "c2bfa5", "", "")
+    call <SID>X("StatusLine", "c2bfa5", "000000", "reverse")
+    call <SID>X("StatusLineNC", "c2bfa5", "7f7f7f", "reverse")
     call <SID>X("Title", "cd5c5c", "", "")
-    "call <SID>X("Visual", "", "", "reverse")
+    call <SID>X("Visual", "6b8e23", "f0e68c", "reverse")
     "VisualNOS
     call <SID>X("WarningMsg", "fa8072", "", "")
     "WildMenu
@@ -293,6 +283,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Constant", "ffa0a0", "", "")
     call <SID>X("Identifier", "98fb98", "", "none")
     call <SID>X("Statement", "f0e68c", "", "bold")
+    " call <SID>X("PreProc", "cd5c5c", "", "")
     call <SID>X("PreProc", "FF6767", "", "")
     call <SID>X("Type", "bdb76b", "", "bold")
     call <SID>X("Special", "ffdead", "", "")
@@ -300,7 +291,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Ignore", "666666", "", "")
     "Error
     call <SID>X("Todo", "ff4500", "eeee00", "")
-    call <SID>X("Structure", "BAFDC2", "", "")
 
     " delete functions {{{
     delf <SID>X
@@ -350,5 +340,16 @@ else
     hi Ignore        ctermfg=darkgrey
     hi Error         cterm=bold ctermfg=7 ctermbg=1
 endif
+
+hi TabLine       cterm=none ctermfg=none   ctermbg=none
+hi TabLineSel    cterm=none ctermfg=yellow ctermbg=none
+hi TabLineFill   cterm=none ctermfg=none   ctermbg=none
+hi Pmenu         cterm=none ctermfg=none   ctermbg=black
+hi PmenuSel      cterm=bold ctermbg=black  ctermfg=yellow
+hi Visual        cterm=none ctermfg=none   ctermbg=black
+hi Folded        cterm=bold ctermfg=yellow ctermbg=none
+hi StatusLine    cterm=bold ctermfg=white  ctermbg=none
+hi StatusLineNC  cterm=none ctermfg=gray   ctermbg=none
+hi VertSplit     cterm=none ctermfg=gray   ctermbg=none
 
 " vim: set fdl=0 fdm=marker:
