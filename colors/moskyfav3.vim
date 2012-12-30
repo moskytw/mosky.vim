@@ -1,6 +1,8 @@
 " Vim color file
 " Maintainer: Mosky <mosky.tw@gmail.com>
 
+" NOTE: It does *NOT* check the compatibility at all.
+
 " # Reset Everything
 
 " reset syntax and highlight to the default
@@ -103,7 +105,6 @@ hi Error      ctermfg=88  ctermbg=231 cterm=reverse
 hi Todo       ctermfg=226 ctermbg=196 cterm=reverse
 
 " vim's groups
-
 hi Normal       ctermfg=231
 hi Visual       ctermfg=NONE cterm=reverse
 "hi VisualNOS
@@ -161,7 +162,6 @@ hi DiffDelete   ctermbg=88
 hi DiffText     ctermbg=130
 
 hi Title        ctermfg=227 cterm=bold
-
 
 " GUI stuffs. I don't use GUI, so keep them clear.
 " hi Menu         ctermfg=253
