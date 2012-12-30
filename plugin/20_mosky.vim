@@ -1,26 +1,20 @@
 " Mosky's VIM configuration
 " https://github.com/moskytw/mosky.vim/blob/master/plugin/20_mosky.vim
 
-" revert settings form Amir
-" NOTE: Amir uses ',' as the leader key, but ',' is useful for me
-let mapleader = '\'
-
-" makes Ctrl-Z work in insert mode
+" use it to make Ctrl-Z work in insert mode
 inoremap <C-Z> <ESC><C-Z>
 
-" open help in new tab
-cabbrev h tab h
-
-" uses leader to make shortcut for common commands
+" make some shortcuts with leader key for common commands
 " 1. daily routines
 noremap <leader>z :w<CR><C-Z>
 noremap <leader>w :w<CR>
 noremap <leader>x :x<CR>
 noremap <leader>q :q!<CR>
-noremap <leader>d :bd<CR>
+noremap <leader>Z :wa<CR><C-Z>
 noremap <leader>W :wa<CR>
 noremap <leader>X :xa<CR>
 noremap <leader>Q :qa!<CR>
+noremap <leader>d :bd<CR>
 noremap <leader>b :buffers<CR>:b
 " 2. tab-related
 noremap <leader>e :tabedit <C-R>=expand("%:p:h")<CR>/
@@ -28,32 +22,33 @@ noremap <leader><leader> :tabnext<CR>
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
-" 3. I always forgot to use <Ctrl+T> to open a file in new tab, so ...
-noremap <leader>t :tabnew<CR>:CtrlP<CR>
 
-" shortcuts which use <F#>
-" 1. paste mode
+" make some shortcuts with <F#>
+" <F2> toggle paste mode
 set pastetoggle=<F2>
 noremap <F2> <F2>:set paste?<CR>
-" 2. vertical split
+" <F3> vertical split
 set splitright
 noremap <F3> :vsplit<CR>
 imap <F3> <C-O><F3>
-" 3. spelling check
+" <F7> spelling check
 noremap <silent> <F7> :set spell!<CR>
 imap <F7> <C-O><F7>
-" 4. toggle foldenable
+" <F10> toggle foldenable
 noremap <silent> <F10> :set foldenable!<CR>
 imap <F10> <C-O><F10>
-" 5. toggle tagbar
+" <F12> toggle tagbar
 noremap <F12> :TagbarToggle<CR>
 imap <F12> <C-O><F12>
 
-" makes arrow-keys work smoothly
-" treats a wrapped line as different lines
+" open help in a new tab
+cabbrev h tab h
+
+" make arrow-keys better
+" treat a wrapped line as different lines
 noremap <down> gj
 noremap <up> gk
-" the following two map will break the function of competition
+" the following two mapping are useful, but it is sad that they also break the competition ...
 "imap <down> <C-O><down>
 "imap <up> <C-O><up>
 noremap <C-down> 3<C-E>
@@ -68,11 +63,11 @@ set cursorline
 set mouse=a " hold shift to select and copy text
 set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
 
-" colors 
+" color 
 set t_Co=256
 color moskyfav
 
-" folding
+" fold
 set foldmethod=syntax
 set foldnestmax=2
 set nofoldenable
@@ -85,21 +80,24 @@ set pumheight=15
 autocmd BufNewFile,BufRead *.mako set filetype=mako
 autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class foldmethod=indent
 autocmd BufNewFile,BufRead */nginx/* set filetype=nginx 
-" autocmd BufWritePost *vimrc,*.vim :so %
+" It will slow down the speed of saving.
+"autocmd BufWritePost *vimrc,*.vim :so %
 
 " plugins
 " 1. ctrlp.vim
 if exists(':CtrlP')
     let g:ctrlp_clear_cache_on_exit = 0
     let g:ctrlp_follow_symlinks = 1
+    " make a shortcut for CtrlP
+    noremap <leader>t :tabnew<CR>:CtrlP<CR>
 endif
 " 2. snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
-" 3. for syntax/python.vim
+" 3. hack syntax/python.vim to act as I want
 let python_highlight_all = 1
 autocmd FileType python
             \ syn keyword pythonTodo TODO NOTE FIXME XXX contained |
-            \ hi link pythonCoding Comment |
             \ hi link pythonPreCondit PreCondit |
-            " python.vim has some bug
+            \ hi link pythonCoding Comment |
+            " python.vim treats both pythonRun and pythonCoding as pythonCoding wrongly
             " \ hi link pythonRun Comment |
