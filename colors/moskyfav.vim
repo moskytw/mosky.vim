@@ -161,7 +161,7 @@ hi DiffDelete   ctermbg=88
 " hi DiffChange
 hi DiffText     ctermbg=130
 
-hi Title        ctermfg=227 cterm=bold
+hi Title        ctermfg=228
 
 " GUI stuffs. I don't use GUI, so keep them clear.
 " hi Menu         ctermfg=253
