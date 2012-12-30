@@ -61,6 +61,7 @@ set cmdheight=1
 set number
 set cursorline
 set mouse=a " hold shift to select and copy text
+" TODO let foldcolumn use the char like │
 set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
 
 " color 
@@ -83,6 +84,7 @@ autocmd BufNewFile,BufRead */nginx/* set filetype=nginx
 " It will slow down the speed of saving.
 "autocmd BufWritePost *vimrc,*.vim :so %
 
+" TODO do plugin-specific statement only if plugin is loaded
 " plugins
 " 1. ctrlp.vim
 if exists(':CtrlP')
