@@ -155,15 +155,15 @@ set background=dark
 
 hi Normal     ctermfg=231
 
-hi Statement  ctermfg=222
+hi Statement  ctermfg=222 cterm=bold
 hi Identifier ctermfg=120
-hi Comment    ctermfg=159
+hi Comment    ctermfg=153
 hi PreProc    ctermfg=203
 
 hi Constant   ctermfg=217
 hi Special    ctermfg=193
 
-hi Type       ctermfg=228
+hi Type       ctermfg=228 cterm=bold
 
 hi Underlined cterm=underline
 hi Ignore     ctermfg=240
