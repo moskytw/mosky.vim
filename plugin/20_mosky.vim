@@ -68,7 +68,6 @@ set mouse=a " hold shift to select and copy text
 
 set t_Co=256
 color moskyfav3
-syn keyword Todo TODO FIXME XXX NOTE contained
 
 " folding
 
@@ -99,6 +98,7 @@ let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
 " 3. for syntax/python.vim
 let python_highlight_all = 1
 autocmd FileType python
+            \ syn keyword pythonTodo TODO NOTE FIXME XXX contained |
             \ hi link pythonCoding Comment |
             \ hi link pythonPreCondit PreCondit |
             " python.vim has some bug
