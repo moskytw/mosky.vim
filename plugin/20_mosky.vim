@@ -64,8 +64,10 @@ imap <C-up> <C-O><C-up>
 " interface
 
 set cmdheight=1
-set nu
+set number
+set cursorline
 set mouse=a " hold shift to select and copy text
+set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
 
 " colors 
 
