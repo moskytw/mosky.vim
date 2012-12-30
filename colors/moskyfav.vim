@@ -119,7 +119,7 @@ hi CursorLineNr ctermfg=230
 
 hi TabLine      ctermfg=249
 "hi TabLineFill
-hi TabLineSel   ctermfg=230
+hi TabLineSel   ctermfg=230 cterm=bold
 
 hi ModeMsg      ctermfg=231
 hi StatusLineNC ctermfg=249
