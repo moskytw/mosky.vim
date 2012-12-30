@@ -42,7 +42,10 @@ imap <F3> <C-O><F3>
 " 3. spelling check
 noremap <silent> <F7> :set spell!<CR>
 imap <F7> <C-O><F7>
-" 4. toggle tagbar
+" 4. toggle foldenable
+noremap <silent> <F10> :set foldenable!<CR>
+imap <F10> <C-O><F10>
+" 5. toggle tagbar
 noremap <F12> :TagbarToggle<CR>
 imap <F12> <C-O><F12>
 
@@ -71,9 +74,9 @@ color moskyfav3
 
 " folding
 
-" folding is annoying for me
-"set foldmethod=syntax
+set foldmethod=syntax
 set foldnestmax=2
+set nofoldenable
 
 " competition
 
@@ -83,7 +86,7 @@ set pumheight=15
 " specific file type
 
 autocmd BufNewFile,BufRead *.mako set filetype=mako
-autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class "foldmethod=indent
+autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class foldmethod=indent
 autocmd BufNewFile,BufRead */nginx/* set filetype=nginx 
 " autocmd BufWritePost *vimrc,*.vim :so %
 
