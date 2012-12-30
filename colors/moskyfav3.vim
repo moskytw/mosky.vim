@@ -114,7 +114,7 @@ hi LineNr       ctermfg=233
 "hi CursorIM
 "hi CursorColumn
 "hi CursorLine
-hi CursorLineNr ctermfg=231
+hi CursorLineNr ctermfg=230
 
 hi TabLine      ctermfg=249
 "hi TabLineFill
@@ -142,13 +142,13 @@ hi PmenuSbar    ctermbg=28
 hi PmenuThumb   ctermbg=34
 
 hi Conceal      ctermbg=17
-hi SpecialKey   ctermfg=193 cterm=underline
+hi SpecialKey   ctermfg=119
 hi Directory    cterm=underline
 
 hi MoreMsg      ctermfg=231
 hi Question     ctermfg=231
-hi link WarningMsg Todo
-hi link ErrorMsg Error
+hi WarningMsg   ctermfg=229 ctermbg=0   cterm=reverse
+hi ErrorMsg     ctermfg=124 ctermbg=231 cterm=reverse
 
 hi SpellBad     term=reverse ctermbg=9
 hi SpellCap     term=reverse ctermbg=12
