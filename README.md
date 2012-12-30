@@ -15,7 +15,7 @@ You have two ways to install it.
 
 #### With Vundle
 
-Add the command in your `.vimrc`:
+Add the following statement in your `.vimrc`:
 
     Bundle "moskytw/mosky.vim"
 
