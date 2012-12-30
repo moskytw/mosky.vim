@@ -1,14 +1,15 @@
-Mosky's VIM Settings
-====================
+Mosky's VIM Configuration
+=========================
 
-It includes my settings and [Vundle][] plugins list (see `mosky.vim/vimrc` for details).
+It has two parts:
 
-It is designed as an independent vim plugin. You can install it without any other plugins.
+1. My own basic VIM configuration
+2. A list of VIM plugins I am using (in [Vundle][] format)
 
 Installation
 ------------
 
-### Install as An Independent Plugin
+### Install 1. Basic VIM Configuration
 
 You have two ways to install it.
 
@@ -31,14 +32,12 @@ If you are using the [Vundle][] or [pathgen][]:
 
 If you don't have any plugin manager, just download it and copy the files under `mosky.vim` to your `~/.vim` folder.
 
-### Install All of Things
+### Install 2. VIM Plugins I Am Using
 
-The [Vundle][] plugins list is recoded on `mosky.vim/vimrc`. Copy the plugins you want and use [Vundle][] to install them.
+The list of plugins is placed in `mosky.vim/vimrc`. Here are the steps to install all of the plugins:
 
-Here are the steps to install all of the plugins:
-
-    $ cd ~/.vim
-    $ ln -s bundle/mosky.vim/vimrc .vimrc
+    $ cd ~
+    $ ln -s .vim/bundle/mosky.vim/vimrc .vimrc
     $ vim
     :BundleInstall
 
