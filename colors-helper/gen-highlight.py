@@ -37,14 +37,14 @@ if __name__ == '__main__':
     gen_hi_clear(VIM_GROUP_NAMES)
     print '" }}}'
     print
-    print '" set ctermfg=7 of all conventional groups'
-    print '" {{{'
-    gen_hi(CONVENTIONAL_GROUP_NAMES, ctermfg=7)
-    print '" }}}'
-    print
-    print '" set ctermfg=7 of all vim\'s groups'
-    print '" {{{'
-    gen_hi(VIM_GROUP_NAMES, ctermfg=7)
-    print '" }}}'
-    print
+    #print '" set ctermfg=7 of all conventional groups'
+    #print '" {{{'
+    #gen_hi(CONVENTIONAL_GROUP_NAMES, ctermfg=7)
+    #print '" }}}'
+    #print
+    #print '" set ctermfg=7 of all vim\'s groups'
+    #print '" {{{'
+    #gen_hi(VIM_GROUP_NAMES, ctermfg=7)
+    #print '" }}}'
+    #print
     print '" --- end ---'
