@@ -130,7 +130,7 @@ hi VertSplit    ctermfg=236
 hi ColorColumn  ctermbg=233
 " hi SignColumn
 
-hi MatchParen   cterm=reverse
+hi MatchParen   ctermbg=22
 hi IncSearch    ctermbg=88
 hi Search       ctermbg=52
 
