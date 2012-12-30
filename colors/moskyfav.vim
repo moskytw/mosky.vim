@@ -81,6 +81,7 @@ hi clear Tooltip
 " --- end ---
 
 " # Start to Set Colors
+" NOTE: It is useful to find the code of terminal's 256-color: http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
 
 " modifiy the output of :colorsheme
 let g:colors_name="moskyfav3"
