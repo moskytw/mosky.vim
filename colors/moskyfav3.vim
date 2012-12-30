@@ -76,73 +76,6 @@ hi clear Scrollbar
 hi clear Tooltip
 " }}}
 
-" set ctermfg=7 of all conventional groups
-" {{{
-hi Comment    ctermfg=7
-hi Constant   ctermfg=7
-hi Identifier ctermfg=7
-hi Statement  ctermfg=7
-hi PreProc    ctermfg=7
-hi Type       ctermfg=7
-hi Special    ctermfg=7
-hi Underlined ctermfg=7
-hi Ignore     ctermfg=7
-hi Error      ctermfg=7
-hi Todo       ctermfg=7
-" }}}
-
-" set ctermfg=7 of all vim's groups
-" {{{
-hi ColorColumn  ctermfg=7
-hi Conceal      ctermfg=7
-hi Cursor       ctermfg=7
-hi CursorIM     ctermfg=7
-hi CursorColumn ctermfg=7
-hi CursorLine   ctermfg=7
-hi Directory    ctermfg=7
-hi DiffAdd      ctermfg=7
-hi DiffChange   ctermfg=7
-hi DiffDelete   ctermfg=7
-hi DiffText     ctermfg=7
-hi ErrorMsg     ctermfg=7
-hi VertSplit    ctermfg=7
-hi Folded       ctermfg=7
-hi FoldColumn   ctermfg=7
-hi SignColumn   ctermfg=7
-hi IncSearch    ctermfg=7
-hi LineNr       ctermfg=7
-hi CursorLineNr ctermfg=7
-hi MatchParen   ctermfg=7
-hi ModeMsg      ctermfg=7
-hi MoreMsg      ctermfg=7
-hi NonText      ctermfg=7
-hi Normal       ctermfg=7
-hi Pmenu        ctermfg=7
-hi PmenuSel     ctermfg=7
-hi PmenuSbar    ctermfg=7
-hi PmenuThumb   ctermfg=7
-hi Question     ctermfg=7
-hi Search       ctermfg=7
-hi SpecialKey   ctermfg=7
-hi SpellBad     ctermfg=7
-hi SpellCap     ctermfg=7
-hi SpellLocal   ctermfg=7
-hi SpellRare    ctermfg=7
-hi StatusLine   ctermfg=7
-hi StatusLineNC ctermfg=7
-hi TabLine      ctermfg=7
-hi TabLineFill  ctermfg=7
-hi TabLineSel   ctermfg=7
-hi Title        ctermfg=7
-hi Visual       ctermfg=7
-hi VisualNOS    ctermfg=7
-hi WarningMsg   ctermfg=7
-hi WildMenu     ctermfg=7
-hi Menu         ctermfg=7
-hi Scrollbar    ctermfg=7
-hi Tooltip      ctermfg=7
-" }}}
-
 " --- end ---
 
 " # Start to Set Colors
@@ -153,8 +86,7 @@ let g:colors_name="moskyfav3"
 " start to set the colors
 set background=dark
 
-hi Normal     ctermfg=231
-
+" conventional groups
 hi Statement  ctermfg=222 cterm=bold
 hi Identifier ctermfg=120
 hi Comment    ctermfg=153
@@ -170,8 +102,70 @@ hi Ignore     ctermfg=240
 hi Error      ctermfg=88  ctermbg=231 cterm=reverse
 hi Todo       ctermfg=226 ctermbg=196 cterm=reverse
 
-" TODO: ...
+" vim's groups
 
-hi ColorColumn ctermbg=232
+hi Normal       ctermfg=231
+hi Visual       ctermfg=NONE cterm=reverse
+"hi VisualNOS
+hi NonText      ctermfg=244
+
+hi LineNr       ctermfg=233
+"hi Cursor
+"hi CursorIM
+"hi CursorColumn
+"hi CursorLine
+hi CursorLineNr ctermfg=231
+
+hi TabLine      ctermfg=249
+"hi TabLineFill
+hi TabLineSel   ctermfg=230
+
+hi ModeMsg      ctermfg=231
+hi StatusLineNC ctermfg=249
+hi StatusLine   ctermfg=230
+hi WildMenu     cterm=reverse
+
+hi VertSplit    ctermfg=236
+hi ColorColumn  ctermbg=233
+" hi SignColumn
+
+hi MatchParen   cterm=reverse
+hi IncSearch    ctermbg=88
+hi Search       ctermbg=52
+
+hi Folded       ctermfg=244
+hi FoldColumn   ctermfg=244
+
+hi Pmenu        ctermfg=231 ctermbg=22
+hi PmenuSel     ctermfg=231 ctermbg=28 cterm=bold
+hi PmenuSbar    ctermbg=28
+hi PmenuThumb   ctermbg=34
+
+hi Conceal      ctermbg=17
+hi SpecialKey   ctermfg=193 cterm=underline
+hi Directory    cterm=underline
+
+hi MoreMsg      ctermfg=231
+hi Question     ctermfg=231
+hi link WarningMsg Todo
+hi link ErrorMsg Error
+
+hi SpellBad     term=reverse ctermbg=9
+hi SpellCap     term=reverse ctermbg=12
+hi SpellRare    term=reverse ctermbg=13
+hi SpellLocal   term=underline ctermbg=14
+
+hi DiffAdd      ctermbg=22
+hi DiffDelete   ctermbg=88
+" hi DiffChange
+hi DiffText     ctermbg=130
+
+hi Title        ctermfg=227 cterm=bold
+
+
+" GUI stuffs. I don't use GUI, so keep them clear.
+" hi Menu         ctermfg=253
+" hi Scrollbar    ctermfg=253
+" hi Tooltip      ctermfg=253
 
 " vim: set fdl=0 fdm=marker:
