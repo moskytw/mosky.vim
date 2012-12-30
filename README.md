@@ -17,7 +17,7 @@ You have two ways to install it.
 
 Add the command in your `.vimrc`:
 
-    Bundle "moskied/mosky.vim"
+    Bundle "moskytw/mosky.vim"
 
 Then, use [Vundle][] to install it:
 
