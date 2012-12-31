@@ -37,6 +37,7 @@ noremap <F2> <F2>:set paste?<CR>
 set splitright
 noremap <F3> :vsplit<CR>
 imap <F3> <C-O><F3>
+" TODO <F5> to execute program
 " <F7> spelling check
 noremap <silent> <F7> :set spell!<CR>
 imap <F7> <C-O><F7>
