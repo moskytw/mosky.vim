@@ -10,10 +10,12 @@ noremap <leader>z :w<CR><C-Z>
 noremap <leader>w :w<CR>
 noremap <leader>x :x<CR>
 noremap <leader>q :q!<CR>
+
 noremap <leader>Z :wa<CR><C-Z>
 noremap <leader>W :wa<CR>
 noremap <leader>X :xa<CR>
 noremap <leader>Q :qa!<CR>
+
 noremap <leader>d :bd<CR>
 noremap <leader>b :buffers<CR>:b
 " 2. tab-related
