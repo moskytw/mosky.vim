@@ -98,7 +98,7 @@ if exists(':CtrlP')
     let g:ctrlp_clear_cache_on_exit = 0
     let g:ctrlp_follow_symlinks = 1
     " make a shortcut for CtrlP
-    noremap <leader>t :tabnew<CR>:CtrlP<CR>
+    "noremap <leader>t :tabnew<CR>:CtrlP<CR>
 endif
 " 2. snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
