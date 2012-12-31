@@ -25,6 +25,9 @@ noremap <leader><leader> :tabnext<CR>
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
+" 3. vertical split
+" TODO use a function to expand pwd
+noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
 
 " make some shortcuts with <F#>
 " <F2> toggle paste mode
