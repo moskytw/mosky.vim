@@ -72,9 +72,9 @@ set completeopt=menu,menuone,longest
 set pumheight=15
 
 " specific file type
-autocmd BufNewFile,BufRead *.mako set filetype=mako
-autocmd FileType python set foldmethod=indent
-autocmd BufNewFile,BufRead */nginx/* set filetype=nginx 
+autocmd BufNewFile,BufRead *.mako setlocal filetype=mako
+autocmd FileType python setlocal foldmethod=indent
+autocmd BufNewFile,BufRead */nginx/* setlocal filetype=nginx 
 " It will slow down the speed of saving.
 "autocmd BufWritePost *vimrc,*.vim :so %
 
