@@ -30,19 +30,6 @@ endfor
 noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
 
 " make some shortcuts with <F#>
-" <F2> toggle paste mode
-set pastetoggle=<F2>
-noremap <F2> <F2>:set paste?<CR>
-" <F3> vertical split
-set splitright
-noremap <F3> :vsplit<CR>
-imap <F3> <C-O><F3>
-" TODO <F5> to execute program
-" <F7> spelling check
-noremap <silent> <F7> :set spell!<CR>
-imap <F7> <C-O><F7>
-" <F10> toggle foldenable
-noremap <silent> <F10> :set foldenable!<CR>
 imap <F10> <C-O><F10>
 " <F12> toggle tagbar
 noremap <F12> :TagbarToggle<CR>
@@ -86,7 +73,7 @@ set pumheight=15
 
 " specific file type
 autocmd BufNewFile,BufRead *.mako set filetype=mako
-autocmd FileType python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class foldmethod=indent
+autocmd FileType python set foldmethod=indent
 autocmd BufNewFile,BufRead */nginx/* set filetype=nginx 
 " It will slow down the speed of saving.
 "autocmd BufWritePost *vimrc,*.vim :so %
