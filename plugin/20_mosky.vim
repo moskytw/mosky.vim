@@ -126,19 +126,19 @@ endfunction
 let g:acp_behavior = {
             \   'java': [
             \       {
-            \           'command' : "\<C-N>",
-            \           'meets'   : 'acp#meetsForKeyword',
-            \           'reapeat' : 0,
+            \           'command': "\<C-N>",
+            \           'meets'  : 'acp#meetsForKeyword',
+            \           'reapeat': 0,
             \       },
             \       {
             \           'command': "\<C-X>\<C-F>",
-            \           'meets'        : 'acp#meetsForFile',
-            \           'reapeat'      : 0,
+            \           'meets'  : 'acp#meetsForFile',
+            \           'reapeat': 0,
             \       },
             \       {
             \           'command': "\<C-X>\<C-O>",
-            \           'meets'        : 'MeetsForJavaOmni',
-            \           'reapeat'      : 0,
+            \           'meets'  : 'MeetsForJavaOmni',
+            \           'reapeat': 0,
             \       },
             \   ]
             \}
