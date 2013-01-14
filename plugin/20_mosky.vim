@@ -121,8 +121,8 @@ function MeetsForJavaOmni(context)
         \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaOmniLength . ',}$'
 endfunction
 
-"TODO user defined competition
-"TODO snipmate competition
+" TODO user defined competition
+" TODO snipmate competition
 let g:acp_behavior = {
             \   'java': [
             \       {
