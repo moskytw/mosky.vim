@@ -83,6 +83,8 @@ set nofoldenable
 " competition
 set completeopt=menu,menuone,longest
 set pumheight=15
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+
 
 " specific file type
 autocmd BufNewFile,BufRead *.mako setlocal filetype=mako
@@ -110,3 +112,33 @@ autocmd FileType python
             \ hi link pythonCoding Comment |
             " python.vim treats both pythonRun and pythonCoding as pythonCoding wrongly
             " \ hi link pythonRun Comment |
+" 4. configure AutoComplPop for Java
+"
+let g:acp_behaviorJavaOmniLength = 0
+
+function MeetsForJavaOmni(context)
+  return g:acp_behaviorJavaOmniLength >= 0 &&
+        \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaOmniLength . ',}$'
+endfunction
+
+"TODO user defined competition
+"TODO snipmate competition
+let g:acp_behavior = {
+            \   'java': [
+            \       {
+            \           'command' : "\<C-N>",
+            \           'meets'   : 'acp#meetsForKeyword',
+            \           'reapeat' : 0,
+            \       },
+            \       {
+            \           'command': "\<C-X>\<C-F>",
+            \           'meets'        : 'acp#meetsForFile',
+            \           'reapeat'      : 0,
+            \       },
+            \       {
+            \           'command': "\<C-X>\<C-O>",
+            \           'meets'        : 'MeetsForJavaOmni',
+            \           'reapeat'      : 0,
+            \       },
+            \   ]
+            \}
