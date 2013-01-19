@@ -135,10 +135,10 @@ let g:acp_behavior = {
             \           'meets'  : 'acp#meetsForFile',
             \           'reapeat': 0,
             \       },
-            \       {
-            \           'command': "\<C-X>\<C-O>",
-            \           'meets'  : 'MeetsForJavaOmni',
-            \           'reapeat': 0,
-            \       },
             \   ]
             \}
+            "\       {
+            "\           'command': "\<C-X>\<C-O>",
+            "\           'meets'  : 'MeetsForJavaOmni',
+            "\           'reapeat': 0,
+            "\       },
