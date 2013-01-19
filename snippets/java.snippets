@@ -1,8 +1,18 @@
 snippet main
-	public class ${1:`Filename()`} {
-		public static void main (String[] args) {
-			${2}
+	public static void main (String[] args) {
+		try {
+
+			${1}
+
+		} catch(Exception e) {
+			e.printStackTrace();
 		}
+	}
+snippet {
+	{
+
+		${1}
+
 	}
 snippet pu
 	public
