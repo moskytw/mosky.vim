@@ -110,6 +110,7 @@ autocmd FileType python
             \ syn keyword pythonTodo TODO NOTE FIXME XXX contained |
             \ hi link pythonPreCondit PreCondit |
             \ hi link pythonCoding Comment |
+            \ syn sync minlines=2000
             " python.vim treats both pythonRun and pythonCoding as pythonCoding wrongly
             " \ hi link pythonRun Comment |
 " 4. configure AutoComplPop for Java
