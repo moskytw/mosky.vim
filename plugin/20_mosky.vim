@@ -49,7 +49,7 @@ noremap <F12> :TagbarToggle<CR>
 imap <F12> <C-O><F12>
 
 " open help in a new tab
-cabbrev h tab h
+cabbrev h vertical help
 
 " make arrow-keys better
 " treat a wrapped line as different lines
