@@ -70,6 +70,7 @@ set cursorline
 set mouse=a " hold shift to select and copy text
 " TODO let foldcolumn use the char like │
 set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
+set colorcolumn=81
 
 " color 
 set t_Co=256
