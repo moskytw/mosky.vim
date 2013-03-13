@@ -72,6 +72,10 @@ set mouse=a " hold shift to select and copy text
 set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
 set colorcolumn=81
 
+" editing
+set textwidth=80
+"set formatoptions+=a
+
 " color 
 set t_Co=256
 color moskyfav
