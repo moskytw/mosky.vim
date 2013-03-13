@@ -110,7 +110,7 @@ endif
 " 2. snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
 " 3. hack syntax/python.vim to act as I want
-let python_highlight_all = 1
+let python_highlight_indent_errors = 0
 autocmd FileType python
             \ syn keyword pythonTodo TODO NOTE FIXME XXX contained |
             \ hi link pythonPreCondit PreCondit |
