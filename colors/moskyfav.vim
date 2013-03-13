@@ -128,7 +128,7 @@ hi StatusLine   ctermfg=230
 hi WildMenu     cterm=reverse
 
 hi VertSplit    ctermfg=236
-hi ColorColumn  ctermbg=233
+hi ColorColumn  ctermfg=9
 " hi SignColumn
 
 hi MatchParen   ctermbg=22
