@@ -80,7 +80,7 @@ set colorcolumn=81
 
 " editing
 set textwidth=80
-"set formatoptions+=a
+set formatoptions=
 set listchars=trail:-,eol:$
 "set encoding=utf-8
 
