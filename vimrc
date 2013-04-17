@@ -21,6 +21,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'moskytw/tagit.vim'
 Bundle 'moskytw/mosky.vim'
+Bundle 'terryma/vim-multiple-cursors'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
