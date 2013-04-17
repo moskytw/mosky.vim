@@ -20,6 +20,12 @@ noremap <leader>d :bd<CR>
 noremap <leader>b :buffers<CR>:b
 noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
 " 2. tab-related
+" form amir's setting
+unmap <leader>te
+unmap <leader>tm
+unmap <leader>tc
+unmap <leader>to
+unmap <leader>tn
 noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
 noremap <leader><leader> :tabnext<CR>
 for i in range(1, 9)
@@ -75,6 +81,7 @@ set colorcolumn=81
 " editing
 set textwidth=80
 "set formatoptions+=a
+set listchars=trail:-,eol:$
 
 " color 
 set t_Co=256
