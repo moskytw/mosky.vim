@@ -74,14 +74,15 @@ set cmdheight=1
 set number
 set cursorline
 set mouse=a " hold shift to select and copy text
-" TODO let foldcolumn use the char like │
-set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
+" TODO let foldcolumn use the char like1
+"set fillchars=stl:\ ,stlnc:\ ,vert:1,fold:\ ,diff:\ ,
 set colorcolumn=81
 
 " editing
 set textwidth=80
 "set formatoptions+=a
 set listchars=trail:-,eol:$
+"set encoding=utf-8
 
 " color 
 set t_Co=256
@@ -96,7 +97,6 @@ set nofoldenable
 set completeopt=menu,menuone,longest
 set pumheight=15
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-
 
 " specific file type
 autocmd BufNewFile,BufRead *.mako setlocal filetype=mako
@@ -116,6 +116,8 @@ if exists(':CtrlP')
 endif
 " 2. snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
+imap <silent> <s-tab> <c-r>=TriggerSnippet()<cr>
+nmap <silent> <s-tab> <esc>i<right><c-r>=TriggerSnippet()<cr>
 " 3. hack syntax/python.vim to act as I want
 let python_highlight_indent_errors = 0
 autocmd FileType python
