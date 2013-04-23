@@ -13,42 +13,37 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 
-" original repos on github
+" daily
+
+Bundle 'moskytw/mosky.vim'
+
+" L9 is required by AutoComplPop
+Bundle 'L9'
+
+Bundle 'AutoComplPop'
+"Bundle 'Valloric/YouCompleteMe'
+
+"Bundle 'javacomplete'
 
 Bundle 'msanders/snipmate.vim'
 "Bundle 'SirVer/ultisnips'
-Bundle 'scrooloose/nerdtree'
+
 Bundle 'kien/ctrlp.vim'
-Bundle 'majutsushi/tagbar'
+
 Bundle 'moskytw/tagit.vim'
-Bundle 'moskytw/mosky.vim'
+
 Bundle 'terryma/vim-multiple-cursors'
-Bundle 'Valloric/YouCompleteMe'
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
 
-" non github repos
+Bundle 'majutsushi/tagbar'
 
-"Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'git://github.com/gregsexton/MatchTag.git'
 
-" vim-scripts repos
+"Bundle 'scrooloose/nerdtree'
 
-Bundle 'L9'
-Bundle 'python.vim'
-"Bundle 'AutoComplPop'
-Bundle 'matchit.zip'
-Bundle 'python_match.vim'
-Bundle 'surround.vim'
+" syntax
+
 Bundle 'mako.vim'
 Bundle 'nginx.vim'
-"Bundle 'javacomplete'
-"Bundle 'FuzzyFinder'
-"Bundle 'Pydiction'
-"Bundle 'desert.vim'
-"Bundle 'pyflakes.vim' " it's a little annoying
-"Bundle 'taglist.vim'
 
 filetype plugin indent on     " required!
 "
