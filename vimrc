@@ -1,3 +1,5 @@
+" # Vundle Stuff
+"
 " Here is the settings for Vundle
 " Find the other settings in <mosky.vim>/plugin/*.vim
 
@@ -11,9 +13,9 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
+" --- Mosky's Plugins ---
 
-" daily
+" ## Daily Using
 
 Bundle 'moskytw/mosky.vim'
 
@@ -21,6 +23,7 @@ Bundle 'moskytw/mosky.vim'
 Bundle 'L9'
 
 Bundle 'AutoComplPop'
+" The alternative of AutoComplPop
 "Bundle 'Valloric/YouCompleteMe'
 
 "Bundle 'javacomplete'
@@ -40,10 +43,12 @@ Bundle 'git://github.com/gregsexton/MatchTag.git'
 
 "Bundle 'scrooloose/nerdtree'
 
-" syntax
+" ## Syntax
 
 Bundle 'mako.vim'
 Bundle 'nginx.vim'
+
+" --- end ---
 
 filetype plugin indent on     " required!
 "
