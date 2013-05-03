@@ -145,12 +145,10 @@ autocmd FileType python
 " TODO: do plugin-specific statement only if plugin is loaded
 
 " 1. ctrlp.vim
-if exists(':CtrlP')
-    let g:ctrlp_clear_cache_on_exit = 0
-    let g:ctrlp_follow_symlinks = 1
-    " make a shortcut for CtrlP
-    "noremap <leader>t :tabnew<CR>:CtrlP<CR>
-endif
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_follow_symlinks = 1
+" make a shortcut for CtrlP
+"noremap <leader>t :tabnew<CR>:CtrlP<CR>
 
 " 2. snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
