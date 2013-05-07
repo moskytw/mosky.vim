@@ -41,9 +41,10 @@ Bundle 'majutsushi/tagbar'
 
 Bundle 'git://github.com/gregsexton/MatchTag.git'
 
-" The argument object and ident object
-" aa, ia, ai, ii
+" the text object for argument, ex. aa, ia
 Bundle 'argtextobj.vim'
+
+" the text object for argument, ex. ai, ii
 Bundle 'michaeljsmith/vim-indent-object'
 
 "Bundle 'scrooloose/nerdtree'
@@ -52,7 +53,10 @@ Bundle 'michaeljsmith/vim-indent-object'
 
 Bundle 'othree/html5.vim'
 Bundle 'othree/html5-syntax.vim'
-Bundle 'hail2u/vim-css3-syntax'
+
+" it works strangely
+"Bundle 'hail2u/vim-css3-syntax
+"
 Bundle 'mako.vim'
 Bundle 'nginx.vim'
 
