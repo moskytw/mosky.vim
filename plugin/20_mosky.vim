@@ -140,6 +140,9 @@ autocmd FileType python
         \ contains=pythonSpaceError,pythonDoctest,@Spell
         \ fold
 
+" matchit.vim
+runtime macros/matchit.vim
+
 " ## Plugins
 "
 " TODO: do plugin-specific statement only if plugin is loaded
