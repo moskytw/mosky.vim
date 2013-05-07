@@ -50,6 +50,9 @@ Bundle 'michaeljsmith/vim-indent-object'
 
 " ## Syntax
 
+Bundle 'othree/html5.vim'
+Bundle 'othree/html5-syntax.vim'
+Bundle 'hail2u/vim-css3-syntax'
 Bundle 'mako.vim'
 Bundle 'nginx.vim'
 
