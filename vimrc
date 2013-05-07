@@ -41,6 +41,11 @@ Bundle 'majutsushi/tagbar'
 
 Bundle 'git://github.com/gregsexton/MatchTag.git'
 
+" The argument object and ident object
+" aa, ia, ai, ii
+Bundle 'argtextobj.vim'
+Bundle 'michaeljsmith/vim-indent-object'
+
 "Bundle 'scrooloose/nerdtree'
 
 " ## Syntax
