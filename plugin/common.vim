@@ -1,15 +1,79 @@
-" # Mosky's VIM configuration 
-"
-" https://github.com/moskytw/mosky.vim/blob/master/plugin/20_mosky.vim
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
 
-" ## Ctrl+Z
+" Set to auto read when a file is changed from the outside
+set autoread
 
-" makes Ctrl-Z work in insert mode
+" Set minimal number of screen lines to keep above and below the cursor
+set scrolloff=7
+
+" Turn on the WiLd menu
+set wildmenu
+
+" Ignore compiled files
+set wildignore=*.o,*~,*.pyc
+
+" Always show current position
+set ruler
+
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap=b,s,<,>,[,]
+
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases 
+set smartcase
+
+" Highlight search results
+set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch
+
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+
+" Ignore case when searching
+set ignorecase
+
+" Override the 'ignorecase' option if the search pattern contains upper case characters.
+set smartcase
+
+" Highlight search results
+set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch
+
+" Show matching brackets when text indicator is over them
+set showmatch
+
+" Don't backup
+set nobackup
+set nowb
+set noswapfile
+
+" Set the color
+syntax on
+set t_Co=256
+color moskyfav
+
+" Print the line number in front of each line
+set number
+
+" Highlight the screen line of the cursor
+set cursorline
+
+" Notify the line is too long
+set colorcolumn=81
+
+" Makes Ctrl-Z work in insert mode
 inoremap <C-Z> <ESC><C-Z>
 
-" ## The Shortcuts with Leader
-
-" 1. daily routines
+" Shortcuts
 
 noremap <leader>z :w<CR><C-Z>
 noremap <leader>w :w<CR>
@@ -25,28 +89,14 @@ noremap <leader>d :bd<CR>
 noremap <leader>b :buffers<CR>:b
 noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
 
-" 2. tab-related
-
-" undo the amir's mapping
-unmap <leader>te
-unmap <leader>tm
-unmap <leader>tc
-unmap <leader>to
-unmap <leader>tn
-
-" my fav
 noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
+
 noremap <leader><leader> :tabnext<CR>
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
 
-" 3. vertical split
-
-" TODO: use a function to expand pwd
 noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
-
-" ## The Shortcuts with <Fx>
 
 " <F2> toggles paste mode
 set pastetoggle=<F2>
@@ -64,6 +114,7 @@ noremap <silent> <F7> :set spell!<CR>
 imap <F7> <C-O><F7>
 
 " <F10> toggles foldenable
+set nofoldenable
 noremap <silent> <F10> :set foldenable!<CR>
 imap <F10> <C-O><F10>
 
@@ -73,8 +124,8 @@ imap <F12> <C-O><F12>
 
 " ## Refines the Arrow-Keys
 
-noremap <down> gj
-noremap <up> gk
+noremap <down> g<down>
+noremap <up> g<up>
 " the following two mapping are useful, but it is sad that they also break the
 " competition ...
 "imap <down> <C-O><down>
@@ -86,14 +137,6 @@ imap <C-down> <C-O><C-down>
 imap <C-up> <C-O><C-up>
 
 " ## Interface
-
-set t_Co=256
-color moskyfav
-
-set cmdheight=1
-set number
-set cursorline
-set colorcolumn=81
 
 " TODO: let foldcolumn use the char like this
 set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
@@ -113,11 +156,8 @@ set formatoptions=
 set foldmethod=syntax
 set foldnestmax=2
 
-" use <F10> to toggle it
-set nofoldenable
-
 " competition
-set completeopt=menu,menuone,longest
+set completeopt=menu,menuone
 set pumheight=15
 
 " ## Specific File Types
