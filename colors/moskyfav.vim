@@ -107,7 +107,7 @@ hi Todo       ctermfg=226 ctermbg=196 cterm=reverse
 
 " vim's groups
 hi Normal       ctermfg=231
-hi Visual       ctermfg=NONE cterm=reverse
+hi Visual       ctermbg=238
 "hi VisualNOS
 hi NonText      ctermfg=244
 
