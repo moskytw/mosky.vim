@@ -39,7 +39,7 @@ Bundle 'terryma/vim-multiple-cursors'
 
 Bundle 'majutsushi/tagbar'
 
-Bundle 'git://github.com/gregsexton/MatchTag.git'
+Bundle 'gregsexton/MatchTag'
 
 Bundle 'python_match.vim'
 
@@ -50,6 +50,8 @@ Bundle 'argtextobj.vim'
 Bundle 'michaeljsmith/vim-indent-object'
 
 "Bundle 'scrooloose/nerdtree'
+
+"Bundle 'ehamberg/vim-cute-python'
 
 " ## Syntax
 
