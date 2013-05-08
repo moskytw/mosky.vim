@@ -19,6 +19,8 @@ set ruler
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
+
+" Move smoothly between lines
 set whichwrap=b,s,<,>,[,]
 
 " Ignore case when searching
@@ -56,6 +58,24 @@ set nobackup
 set nowb
 set noswapfile
 
+" Use spaces instead of tabs
+set expandtab
+
+" Be smart when using tabs ;)
+set smarttab
+
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+
+" Linebreak on 500 characters
+set lbr
+set tw=500
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
 " Set the color
 syntax on
 set t_Co=256
@@ -69,6 +89,12 @@ set cursorline
 
 " Notify the line is too long
 set colorcolumn=81
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
 
 " Makes Ctrl-Z work in insert mode
 inoremap <C-Z> <ESC><C-Z>
@@ -136,6 +162,8 @@ noremap <C-up> 3<C-Y>
 imap <C-down> <C-O><C-down>
 imap <C-up> <C-O><C-up>
 
+noremap <leader>/ :noh<cr>
+
 " ## Interface
 
 " TODO: let foldcolumn use the char like this
@@ -147,7 +175,7 @@ set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
 set mouse=a
 
 set encoding=utf-8
-set listchars=tab:>-,trail:#,eol:$
+"set listchars=tab:>-,trail:▵
 
 " use gq to format the paragraph
 set textwidth=80
