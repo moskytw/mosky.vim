@@ -41,6 +41,8 @@ Bundle 'majutsushi/tagbar'
 
 Bundle 'git://github.com/gregsexton/MatchTag.git'
 
+Bundle 'python_match.vim'
+
 " the text object for argument, ex. aa, ia
 Bundle 'argtextobj.vim'
 
