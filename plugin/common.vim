@@ -99,6 +99,9 @@ autocmd BufReadPost *
 " Makes Ctrl-Z work in insert mode
 inoremap <C-Z> <ESC><C-Z>
 
+let mapleader = ","
+let g:mapleader = ","
+
 " Shortcuts
 
 noremap <leader>z :w<CR><C-Z>
@@ -162,7 +165,7 @@ noremap <C-up> 3<C-Y>
 imap <C-down> <C-O><C-down>
 imap <C-up> <C-O><C-up>
 
-noremap <leader>/ :noh<cr>
+noremap <leader><CR> :noh<cr>
 
 " ## Interface
 
