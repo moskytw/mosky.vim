@@ -178,7 +178,7 @@ set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
 set mouse=a
 
 set encoding=utf-8
-set listchars=trail:▵
+set listchars=tab:▫▫,trail:▵
 set list
 
 " use gq to format the paragraph
