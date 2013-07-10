@@ -49,6 +49,8 @@ Bundle 'argtextobj.vim'
 " the text object for argument, ex. ai, ii
 Bundle 'michaeljsmith/vim-indent-object'
 
+Bundle 'tpope/vim-surround'
+
 "Bundle 'scrooloose/nerdtree'
 
 "Bundle 'ehamberg/vim-cute-python'
