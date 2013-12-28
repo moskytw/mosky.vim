@@ -28,7 +28,7 @@ Then, use [Vundle][] to install it:
 
 If you are using the [Vundle][] or [pathgen][]:
 
-    $ git clone https://github.com/moskied/mosky.vim ~/.vim/bundle/mosky.vim
+    $ git clone https://github.com/moskytw/mosky.vim ~/.vim/bundle/mosky.vim
 
 If you don't have any plugin manager, just download it and copy the files under `mosky.vim` to your `~/.vim` folder.
 
