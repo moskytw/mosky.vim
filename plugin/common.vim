@@ -90,12 +90,6 @@ set cursorline
 " Notify the line is too long
 set colorcolumn=81
 
-" Return to last edit position when opening files (You want this!)
-autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
-
 " Makes Ctrl-Z work in insert mode
 inoremap <C-Z> <ESC><C-Z>
 
