@@ -197,6 +197,11 @@ runtime macros/matchit.vim
 
 " TODO: do plugin-specific statement only if plugin is loaded
 
+" syntastic
+
+"let g:syntastic_check_on_wq=0
+let g:syntastic_enable_signs=0
+
 " ctrlp.vim
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_follow_symlinks = 1

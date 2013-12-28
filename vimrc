@@ -59,6 +59,7 @@ Bundle 'tpope/vim-surround'
 
 Bundle 'othree/html5.vim'
 Bundle 'othree/html5-syntax.vim'
+Bundle 'scrooloose/syntastic'
 
 " it works strangely
 "Bundle 'hail2u/vim-css3-syntax
