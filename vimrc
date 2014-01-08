@@ -33,7 +33,7 @@ Bundle 'msanders/snipmate.vim'
 
 Bundle 'kien/ctrlp.vim'
 
-Bundle 'moskytw/tagit.vim'
+"Bundle 'moskytw/tagit.vim'
 
 Bundle 'terryma/vim-multiple-cursors'
 
