@@ -67,6 +67,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'mako.vim'
 Bundle 'nginx.vim'
 
+Bundle 'ap/vim-css-color'
+
 " --- end ---
 
 filetype plugin indent on     " required!
