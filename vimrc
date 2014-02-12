@@ -10,7 +10,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " --- Mosky's Plugins ---
@@ -35,19 +35,22 @@ Bundle 'kien/ctrlp.vim'
 
 "Bundle 'moskytw/tagit.vim'
 
-Bundle 'terryma/vim-multiple-cursors'
+"Bundle 'terryma/vim-multiple-cursors'
 
-Bundle 'majutsushi/tagbar'
+"Bundle 'majutsushi/tagbar'
 
 Bundle 'gregsexton/MatchTag'
 
 Bundle 'python_match.vim'
 
 " the text object for argument, ex. aa, ia
-Bundle 'argtextobj.vim'
+"Bundle 'argtextobj.vim'
 
 " the text object for argument, ex. ai, ii
-Bundle 'michaeljsmith/vim-indent-object'
+"Bundle 'michaeljsmith/vim-indent-object'
+
+" more text objects
+Bundle 'wellle/targets.vim'
 
 Bundle 'tpope/vim-surround'
 
