@@ -132,8 +132,8 @@ hi ColorColumn  ctermfg=9
 " hi SignColumn
 
 hi MatchParen   ctermbg=22
-hi IncSearch    ctermbg=88
-hi Search       ctermbg=52
+hi IncSearch    ctermbg=196
+hi Search       ctermbg=202
 
 hi Folded       ctermfg=244
 hi FoldColumn   ctermfg=244
