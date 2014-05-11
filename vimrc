@@ -44,7 +44,7 @@ Bundle 'gregsexton/MatchTag'
 Bundle 'python_match.vim'
 
 " the text object for argument, ex. aa, ia
-"Bundle 'argtextobj.vim'
+Bundle 'argtextobj.vim'
 
 " the text object for argument, ex. ai, ii
 "Bundle 'michaeljsmith/vim-indent-object'
