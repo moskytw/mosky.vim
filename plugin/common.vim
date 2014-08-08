@@ -115,6 +115,8 @@ for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
 
+set tabpagemax=100
+
 noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
 
 " <F2>: toggle paste mode
