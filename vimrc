@@ -17,9 +17,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'moskytw/mosky.vim'
 
 " L9 is required by AutoComplPop
-Plugin 'L9'
+"Plugin 'L9'
 
-Plugin 'AutoComplPop'
+"Plugin 'AutoComplPop'
 " The alternative of AutoComplPop
 "Plugin 'Valloric/YouCompleteMe'
 
@@ -28,7 +28,7 @@ Plugin 'AutoComplPop'
 Plugin 'msanders/snipmate.vim'
 "Plugin 'SirVer/ultisnips'
 
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
 
 "Plugin 'moskytw/tagit.vim'
 
@@ -36,20 +36,20 @@ Plugin 'kien/ctrlp.vim'
 
 "Plugin 'majutsushi/tagbar'
 
-Plugin 'gregsexton/MatchTag'
+"Plugin 'gregsexton/MatchTag'
 
-Plugin 'python_match.vim'
+"Plugin 'python_match.vim'
 
 " the text object for argument, ex. aa, ia
-Plugin 'argtextobj.vim'
+"Plugin 'argtextobj.vim'
 
 " the text object for argument, ex. ai, ii
 "Plugin 'michaeljsmith/vim-indent-object'
 
 " more text objects
-Plugin 'wellle/targets.vim'
+"Plugin 'wellle/targets.vim'
 
-Plugin 'tpope/vim-surround'
+"Plugin 'tpope/vim-surround'
 
 "Plugin 'scrooloose/nerdtree'
 
@@ -57,17 +57,17 @@ Plugin 'tpope/vim-surround'
 
 " ## Syntax
 
-Plugin 'othree/html5.vim'
-Plugin 'othree/html5-syntax.vim'
-Plugin 'scrooloose/syntastic'
+"Plugin 'othree/html5.vim'
+"Plugin 'othree/html5-syntax.vim'
+"Plugin 'scrooloose/syntastic'
 
 " it works strangely
 "Plugin 'hail2u/vim-css3-syntax
 "
-Plugin 'mako.vim'
-Plugin 'nginx.vim'
+"Plugin 'mako.vim'
+"Plugin 'nginx.vim'
 
-Plugin 'ap/vim-css-color'
+"Plugin 'ap/vim-css-color'
 
 " --- end ---
 
