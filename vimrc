@@ -20,9 +20,9 @@ Bundle 'gmarik/vundle'
 Bundle 'moskytw/mosky.vim'
 
 " L9 is required by AutoComplPop
-Bundle 'L9'
+"Bundle 'L9'
 
-Bundle 'AutoComplPop'
+"Bundle 'AutoComplPop'
 " The alternative of AutoComplPop
 "Bundle 'Valloric/YouCompleteMe'
 
@@ -31,7 +31,7 @@ Bundle 'AutoComplPop'
 Bundle 'msanders/snipmate.vim'
 "Bundle 'SirVer/ultisnips'
 
-Bundle 'kien/ctrlp.vim'
+"Bundle 'kien/ctrlp.vim'
 
 "Bundle 'moskytw/tagit.vim'
 
@@ -39,20 +39,20 @@ Bundle 'kien/ctrlp.vim'
 
 "Bundle 'majutsushi/tagbar'
 
-Bundle 'gregsexton/MatchTag'
+"Bundle 'gregsexton/MatchTag'
 
 Bundle 'python_match.vim'
 
 " the text object for argument, ex. aa, ia
-Bundle 'argtextobj.vim'
+"Bundle 'argtextobj.vim'
 
 " the text object for argument, ex. ai, ii
 "Bundle 'michaeljsmith/vim-indent-object'
 
 " more text objects
-Bundle 'wellle/targets.vim'
+"Bundle 'wellle/targets.vim'
 
-Bundle 'tpope/vim-surround'
+"Bundle 'tpope/vim-surround'
 
 "Bundle 'scrooloose/nerdtree'
 
@@ -60,17 +60,17 @@ Bundle 'tpope/vim-surround'
 
 " ## Syntax
 
-Bundle 'othree/html5.vim'
-Bundle 'othree/html5-syntax.vim'
-Bundle 'scrooloose/syntastic'
+"Bundle 'othree/html5.vim'
+"Bundle 'othree/html5-syntax.vim'
+"Bundle 'scrooloose/syntastic'
 
 " it works strangely
 "Bundle 'hail2u/vim-css3-syntax
-"
-Bundle 'mako.vim'
-Bundle 'nginx.vim'
 
-Bundle 'ap/vim-css-color'
+Bundle 'mako.vim'
+"Bundle 'nginx.vim'
+"
+"Bundle 'ap/vim-css-color'
 
 " --- end ---
 
