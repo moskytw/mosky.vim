@@ -2,16 +2,16 @@
 filetype plugin on
 filetype indent on
 
-" set to auto read when a file is changed from the outside
+" set to reread automatically when file is changed from outside
 set autoread
 
 " set minimal number of screen lines to keep above and below the cursor
-set scrolloff=7
+set scrolloff=2
 
-" turn on the WiLd menu
+" turn on the wild menu
 set wildmenu
 
-" ignore compiled files
+" ignore files which are from compiling
 set wildignore=*.o,*~,*.pyc
 
 " always show current position
@@ -26,7 +26,7 @@ set whichwrap=b,s,<,>,[,]
 " ignore case when searching
 set ignorecase
 
-" when searching try to be smart about cases
+" when searching try to be smart on case
 set smartcase
 
 " highlight search results
@@ -77,14 +77,14 @@ set number
 " highlight the screen line of the cursor
 set cursorline
 
-" notify the line is too long
+" notify if the line is too long
 set colorcolumn=81
 
-" return to last edit position when opening files (You want this!)
-"autocmd BufReadPost *
-"     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-"     \   exe "normal! g`\"" |
-"     \ endif
+" return to last edit position when opening files
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
 
 " make <Ctrl-Z> work in insert mode
 inoremap <C-Z> <ESC><C-Z>
@@ -139,7 +139,7 @@ set nofoldenable
 noremap <silent> <F10> :set foldenable!<CR>
 imap <F10> <C-O><F10>
 
-" Refine the arrow-keys
+" refine the arrow-keys
 
 noremap <down> g<down>
 noremap <up> g<up>
@@ -177,7 +177,7 @@ set completeopt=menu,menuone
 set pumheight=15
 
 autocmd BufNewFile,BufRead *.mako setlocal filetype=mako
-autocmd BufNewFile,BufRead */nginx/* setlocal filetype=nginx 
+autocmd BufNewFile,BufRead */nginx/* setlocal filetype=nginx
 
 autocmd FileType python setlocal nosmartindent
 
