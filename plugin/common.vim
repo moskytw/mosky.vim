@@ -156,7 +156,7 @@ imap <C-up> <C-O><C-up>
 noremap <leader><CR> :noh<cr>
 
 " TODO: let foldcolumn use the char like this
-set fillchars=stl:\ ,stlnc:\ ,vert:│,fold:\ ,diff:\ ,
+set fillchars=stl:\ ,stlnc:\ ,vert:\│,fold:\ ,diff:\ ,
 
 " hold shift to select and copy text
 set mouse=a
@@ -189,7 +189,7 @@ autocmd FileType python
         \ contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell
         \ fold
     \ |
-    \ syn region  pythonRawString
+    \ syn region pythonRawString
         \ start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
         \ contains=pythonSpaceError,pythonDoctest,@Spell
         \ fold
@@ -199,63 +199,9 @@ runtime macros/matchit.vim
 
 " TODO: do plugin-specific statement only if plugin is loaded
 
-" syntastic
-
-"let g:syntastic_check_on_wq=0
-let g:syntastic_enable_signs=0
-
 " ctrlp.vim
-let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_follow_symlinks = 1
-" make a shortcut for CtrlP
-"noremap <leader>t :tabnew<CR>:CtrlP<CR>
+let g:ctrlp_clear_cache_on_exit=0
+let g:ctrlp_follow_symlinks=1
 
 " snipMate
 let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
-
-" YouCompleteMe
-"imap <silent> <s-tab> <c-r>=TriggerSnippet()<cr>
-"nmap <silent> <s-tab> <esc>i<right><c-r>=TriggerSnippet()<cr>
-
-" hack syntax/python.vim to act as I want
-"let python_highlight_indent_errors = 0
-"autocmd FileType python
-"            \ syn keyword pythonTodo TODO NOTE FIXME XXX contained |
-"            \ hi link pythonPreCondit PreCondit |
-"            \ hi link pythonCoding Comment |
-"            \ syn sync minlines=2000
-"            " python.vim treats both pythonRun and pythonCoding as pythonCoding wrongly
-"            " \ hi link pythonRun Comment |
-
-" configure AutoComplPop for Java
-
-"autocmd FileType java setlocal omnifunc=javacomplete#Complete
-"
-"let g:acp_behaviorJavaOmniLength = 0
-"
-"function MeetsForJavaOmni(context)
-"  return g:acp_behaviorJavaOmniLength >= 0 &&
-"        \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaOmniLength . ',}$'
-"endfunction
-
-"let g:acp_behavior = {
-"            \   'java': [
-"            \       {
-"            \           'command': "\<C-N>",
-"            \           'meets'  : 'acp#meetsForKeyword',
-"            \           'reapeat': 0,
-"            \       },
-"            \       {
-"            \           'command': "\<C-X>\<C-F>",
-"            \           'meets'  : 'acp#meetsForFile',
-"            \           'reapeat': 0,
-"            \       },
-"            \   ]
-"            \}
-"            "\       {
-"            "\           'command': "\<C-X>\<C-O>",
-"            "\           'meets'  : 'MeetsForJavaOmni',
-"            "\           'reapeat': 0,
-"            "\       },
-" TODO: user defined competition
-" TODO: snipmate competition
