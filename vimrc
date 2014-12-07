@@ -10,64 +10,59 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" --- Mosky's Plugins ---
-
-" ## Daily Using
-
+" Mosky's fav
 Plugin 'moskytw/mosky.vim'
 
-" L9 is required by AutoComplPop
-Plugin 'L9'
+" <Ctrl-P>
+Plugin 'kien/ctrlp.vim'
 
-Plugin 'AutoComplPop'
-" The alternative of AutoComplPop
-"Plugin 'Valloric/YouCompleteMe'
+" :TagbarToggle
+Plugin 'majutsushi/tagbar'
 
-"Plugin 'javacomplete'
+" :Errors
+Plugin 'scrooloose/syntastic'
 
+" highlight the matched tag
+Plugin 'gregsexton/MatchTag'
+
+" switch between Python's if, elif, etc. by %
+Plugin 'python_match.vim'
+
+" conceal lambda into λ, etc.
+Plugin 'ehamberg/vim-cute-python'
+
+" ifmain<Tab>
 Plugin 'msanders/snipmate.vim'
 "Plugin 'SirVer/ultisnips'
 
-Plugin 'kien/ctrlp.vim'
+" <Ctrl-N><Ctrl-N>va'<ESC><ESC>
+" <Ctrl-V>G<Ctrl-N>i'
+Plugin 'terryma/vim-multiple-cursors'
 
-"Plugin 'moskytw/tagit.vim'
+" won't work with targets.vim
+"Plugin 'argtextobj.vim'
 
-"Plugin 'terryma/vim-multiple-cursors'
+" vai, vaI, vii, vaI
+Plugin 'michaeljsmith/vim-indent-object'
 
-"Plugin 'majutsushi/tagbar'
-
-Plugin 'gregsexton/MatchTag'
-
-Plugin 'python_match.vim'
-
-" the text object for argument, ex. aa, ia
-Plugin 'argtextobj.vim'
-
-" the text object for argument, ex. ai, ii
-"Plugin 'michaeljsmith/vim-indent-object'
-
-" more text objects
+" da,
 Plugin 'wellle/targets.vim'
 
+" cs"', vsw*, vwS<p>
 Plugin 'tpope/vim-surround'
 
-"Plugin 'scrooloose/nerdtree'
-
-"Plugin 'ehamberg/vim-cute-python'
-
-" ## Syntax
-
+" web
 Plugin 'othree/html5.vim'
-Plugin 'othree/html5-syntax.vim'
-Plugin 'scrooloose/syntastic'
+Plugin 'othree/yajs.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'ap/vim-css-color'
 
-" it works strangely
-"Plugin 'hail2u/vim-css3-syntax
-"
+" more web
 Plugin 'mako.vim'
 Plugin 'nginx.vim'
 
-Plugin 'ap/vim-css-color'
+" omni completion for java
+"Plugin 'javacomplete'
 
 " --- end ---
 
