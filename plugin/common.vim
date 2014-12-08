@@ -205,3 +205,6 @@ let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
 " ctrlp.vim
 let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_follow_symlinks=1
+
+" syntastic
+let g:syntastic_enable_signs=0
