@@ -199,9 +199,9 @@ runtime macros/matchit.vim
 
 " TODO: do plugin-specific statement only if plugin is loaded
 
+" snipMate
+let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"
+
 " ctrlp.vim
 let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_follow_symlinks=1
-
-" snipMate
-let g:snippets_dir = $HOME."/.vim/bundle/mosky.vim/snippets/"

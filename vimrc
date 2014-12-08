@@ -13,31 +13,14 @@ Plugin 'gmarik/Vundle.vim'
 " Mosky's fav
 Plugin 'moskytw/mosky.vim'
 
-" <Ctrl-P>
-Plugin 'kien/ctrlp.vim'
-
-" :TagbarToggle
-Plugin 'majutsushi/tagbar'
-
-" :Errors
-Plugin 'scrooloose/syntastic'
-
 " highlight the matched tag
 Plugin 'gregsexton/MatchTag'
-
-" switch between Python's if, elif, etc. by %
-Plugin 'python_match.vim'
 
 " conceal lambda into λ, etc.
 Plugin 'ehamberg/vim-cute-python'
 
-" ifmain<Tab>
-Plugin 'msanders/snipmate.vim'
-"Plugin 'SirVer/ultisnips'
-
-" <Ctrl-N><Ctrl-N>va'<ESC><ESC>
-" <Ctrl-V>G<Ctrl-N>i'
-Plugin 'terryma/vim-multiple-cursors'
+" switch between Python's if, elif, etc. by %
+Plugin 'python_match.vim'
 
 " won't work with targets.vim
 "Plugin 'argtextobj.vim'
@@ -50,6 +33,23 @@ Plugin 'wellle/targets.vim'
 
 " cs"', vsw*, vwS<p>
 Plugin 'tpope/vim-surround'
+
+" <Ctrl-N><Ctrl-N>va'<ESC><ESC>
+" <Ctrl-V>G<Ctrl-N>i'
+Plugin 'terryma/vim-multiple-cursors'
+
+" ifmain<Tab>
+Plugin 'msanders/snipmate.vim'
+"Plugin 'SirVer/ultisnips'
+
+" <Ctrl-P>
+Plugin 'kien/ctrlp.vim'
+
+" :TagbarToggle
+Plugin 'majutsushi/tagbar'
+
+" :Errors
+Plugin 'scrooloose/syntastic'
 
 " web
 Plugin 'othree/html5.vim'
