@@ -156,7 +156,7 @@ imap <C-up> <C-O><C-up>
 noremap <leader><CR> :noh<cr>
 
 " TODO: let foldcolumn use the char like this
-set fillchars=stl:\ ,stlnc:\ ,vert:\│,fold:\ ,diff:\ ,
+set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ ,
 
 " hold shift to select and copy text
 set mouse=a
