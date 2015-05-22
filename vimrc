@@ -17,7 +17,7 @@ Plugin 'moskytw/mosky.vim'
 Plugin 'gregsexton/MatchTag'
 
 " conceal lambda into λ, etc.
-"Plugin 'ehamberg/vim-cute-python'
+Plugin 'ehamberg/vim-cute-python'
 
 " switch between Python's if, elif, etc. by %
 Plugin 'python_match.vim'
