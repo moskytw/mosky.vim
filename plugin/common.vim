@@ -162,7 +162,7 @@ set fillchars=stl:\ ,stlnc:\ ,vert:\│,fold:\ ,diff:\ ,
 set mouse=a
 
 " force the mouse work if TERM is not xterm
-set ttymouse=xterm2
+"set ttymouse=xterm2
 
 set encoding=utf-8
 set listchars=tab:▹\ ,trail:▵
