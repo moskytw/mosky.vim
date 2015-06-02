@@ -211,3 +211,4 @@ let g:ctrlp_follow_symlinks=1
 
 " syntastic
 let g:syntastic_enable_signs=0
+let g:syntastic_python_checkers = ['python']
