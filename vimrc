@@ -22,9 +22,6 @@ Plugin 'ehamberg/vim-cute-python'
 " switch between Python's if, elif, etc. by %
 Plugin 'python_match.vim'
 
-" won't work with targets.vim
-"Plugin 'argtextobj.vim'
-
 " vai, vaI, vii, vaI
 Plugin 'michaeljsmith/vim-indent-object'
 
