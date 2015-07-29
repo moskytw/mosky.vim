@@ -164,9 +164,6 @@ set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ ,
 " hold shift to select and copy text
 set mouse=a
 
-" force the mouse work if TERM is not xterm
-"set ttymouse=xterm2
-
 set encoding=utf-8
 set listchars=tab:▹\ ,trail:▵
 set list
