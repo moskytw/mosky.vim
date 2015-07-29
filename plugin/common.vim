@@ -27,9 +27,6 @@ set ignorecase
 " override ignorecase when contains uppercase char
 set smartcase
 
-" highlight search results
-"set hlsearch
-
 " make search act like search in modern browsers
 set incsearch
 
@@ -152,7 +149,7 @@ noremap <C-up> 3<C-Y>
 imap <C-down> <C-O><C-down>
 imap <C-up> <C-O><C-up>
 
-noremap <leader><CR> :noh<cr>
+noremap <leader>h :set hlsearch!<CR>
 
 " TODO: let foldcolumn use the char like this
 set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ ,
