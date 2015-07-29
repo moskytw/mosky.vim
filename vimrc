@@ -19,20 +19,51 @@ Plugin 'gregsexton/MatchTag'
 " conceal lambda into λ, etc.
 Plugin 'ehamberg/vim-cute-python'
 
-" switch between Python's if, elif, etc. by %
+" use % to travel Python's if, elif, etc.
 Plugin 'python_match.vim'
 
-" vai, vaI, vii, vaI
+" viI: an indent level (no lines above/below)
+" vii: an indent level (no lines above)
+" vai: an indent level + the above line
+" vaI: an indent level + the above & below line
 Plugin 'michaeljsmith/vim-indent-object'
 
-" da,
+" dIa: f(a, b, c) -> f(a, ,c)
+" dia: f(a, b, c) -> f(a,, c)
+" daa: f(a, b, c) -> f(a, c)
+" dAa: f(a, b, c) -> f(ac)
+" more: https://github.com/wellle/targets.vim/blob/master/cheatsheet.md
 Plugin 'wellle/targets.vim'
 
-" cs"', vsw*, vwS<p>
+" viwS'  : word   -> 'word'
+" ysiw'  : word   -> 'word'
+" cs'"   : 'word' -> "word"
+" ds"    : "word" -> word
+" viwS<p>: word        -> <p>word</p>
+" ysiw<p>: word        -> <p>word</p>
+" cst<a> : <p>word</p> -> <a>word</a>
+" dst    : <a>word</a> -> word
+" yss for entire line
 Plugin 'tpope/vim-surround'
 
-" <Ctrl-N><Ctrl-N>va'<ESC><ESC>
-" <Ctrl-V>G<Ctrl-N>i'
+" ms-: multiple selection
+" enter and exit the ms-visual mode:
+"
+" <Ctrl-N>: enter with current word or visual selection
+" <ESC>   : exit
+"
+" in the ms-visual mode:
+"
+" <Ctrl-N>: add
+" <Ctrl-X>: skip
+" <Ctrl-P>: back
+" c, s    : delete all selections and go ms-insert mode
+" v       : go normal mode
+"
+" in the ms-normal mode:
+"
+" I, i, a, A: move the cursors and go ms-insert mode
+"
 Plugin 'terryma/vim-multiple-cursors'
 
 " #!<Tab>
