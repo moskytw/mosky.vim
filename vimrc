@@ -38,9 +38,10 @@ Plugin 'tpope/vim-surround'
 " <Ctrl-V>G<Ctrl-N>i'
 Plugin 'terryma/vim-multiple-cursors'
 
+" #!<Tab>
 " ifmain<Tab>
-Plugin 'msanders/snipmate.vim'
-"Plugin 'SirVer/ultisnips'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " <Ctrl-P>
 Plugin 'kien/ctrlp.vim'
