@@ -56,7 +56,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'othree/html5.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'ap/vim-css-color'
+"Plugin 'ap/vim-css-color'
 
 " more web
 Plugin 'mako.vim'
