@@ -21,9 +21,10 @@ set backspace=eol,start,indent
 set whichwrap=b,s,<,>,[,]
 
 " ignore case when searching
+" use /\C to overrule it
 set ignorecase
 
-" when searching try to be smart on case
+" override ignorecase when contains uppercase char
 set smartcase
 
 " highlight search results
