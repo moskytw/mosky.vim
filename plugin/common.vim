@@ -30,7 +30,7 @@ set ignorecase
 set smartcase
 
 " highlight search results
-set hlsearch
+"set hlsearch
 
 " make search act like search in modern browsers
 set incsearch
