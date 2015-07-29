@@ -106,17 +106,19 @@ noremap <leader>Q :qa!<CR>
 noremap <leader>X :xa<CR>
 noremap <leader>Z :wa<CR><C-Z>
 
+" buffer-oriented
 noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
 noremap <leader>d :bd<CR>
 noremap <leader>b :buffers<CR>:b
 
+" tab-oriented
 noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
-
+",,
 noremap <leader><leader> :tabnext<CR>
+",1
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
-
 set tabpagemax=100
 
 noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
