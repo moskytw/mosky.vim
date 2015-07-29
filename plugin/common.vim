@@ -149,6 +149,9 @@ let g:ctrlp_follow_symlinks=1
 let g:syntastic_enable_signs=0
 let g:syntastic_python_checkers=['python']
 
+" UltiSnips
+let g:ultisnips_python_quoting_style='single'
+
 " don't backup
 set nobackup
 set nowb
