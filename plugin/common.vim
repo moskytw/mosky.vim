@@ -2,9 +2,6 @@
 filetype plugin on
 filetype indent on
 
-" set to reread automatically when file is changed from outside
-set autoread
-
 " set minimal number of screen lines to keep above and below the cursor
 set scrolloff=2
 
