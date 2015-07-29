@@ -1,5 +1,3 @@
-" based on http://amix.dk/blog/post/19691#The-ultimate-Vim-configuration-on-Github
-
 " enable filetype plugins
 filetype plugin on
 filetype indent on
