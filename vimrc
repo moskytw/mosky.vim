@@ -19,6 +19,9 @@ Plugin 'gregsexton/MatchTag'
 " conceal lambda into λ, etc.
 Plugin 'ehamberg/vim-cute-python'
 
+" use % to travel paired tags
+runtime macros/matchit.vim
+
 " use % to travel Python's if, elif, etc.
 Plugin 'python_match.vim'
 
