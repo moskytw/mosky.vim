@@ -2,84 +2,64 @@
 filetype plugin on
 filetype indent on
 
-" set minimal number of screen lines to keep above and below the cursor
-set scrolloff=2
-
-" turn on the wild menu
-set wildmenu
-
-" ignore files which are from compiling
-set wildignore=*.o,*~,*.pyc
-
-" always show current position
 set ruler
+set number
 
-" configure backspace so it acts as it should act
-set backspace=eol,start,indent
+set textwidth=80
+set wrap
+set linebreak
 
-" move smoothly between lines
-set whichwrap=b,s,<,>,[,]
-
-" ignore case when searching
-" use /\C to overrule it
-set ignorecase
-
-" override ignorecase when contains uppercase char
-set smartcase
-
-" make search act like search in modern browsers
-set incsearch
-
-" don't redraw while executing macros (good performance config)
-set lazyredraw
-
-" show matching brackets when text indicator is over them
 set showmatch
 
-" don't backup
-set nobackup
-set nowb
-set noswapfile
+set incsearch
+" use /\C to overrule it
+set ignorecase
+" be case-sensitive when contains upper char
+set smartcase
 
-" use spaces instead of tabs
-set expandtab
+set autoindent
+set smartindent
 
-" be smart when using tabs ;)
-set smarttab
-
-" 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+set expandtab
+set smarttab
 
-" linebreak on 500 characters
-set lbr
-set tw=500
+" keep spaces from top and bottom
+set scrolloff=2
 
-" by default, use auto indent
-set autoindent
+set wildmenu
+set wildignore=*.o,*~,*.pyc
 
-" wrap lines
-set wrap
+set listchars=tab:▹\ ,trail:▵
+set list
 
-" set the color
+" TODO: let foldcolumn use the char like this
+set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ ,
+
+set foldmethod=syntax
+set foldnestmax=2
+
+" for gq
+set formatoptions=
+
+" competition
+set completeopt=menu,menuone
+set pumheight=15
+
+set mouse=a
+
+set encoding=utf-8
+
+set tabpagemax=100
+
 syntax on
 set t_Co=256
 color moskyfav
 
-" print the line number in front of each line
-set number
-
-" highlight the screen line of the cursor
 set cursorline
 
-" notify if the line is too long
 set colorcolumn=81
-
-" return to last edit position when opening files
-autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
 
 " make <Ctrl-Z> work in insert mode
 inoremap <C-Z> <ESC><C-Z>
@@ -87,24 +67,22 @@ inoremap <C-Z> <ESC><C-Z>
 let mapleader = ","
 let g:mapleader = ","
 
-" useful shortcuts
-
+" save
 noremap <leader>w :w<CR>
 noremap <leader>q :q!<CR>
 noremap <leader>x :x<CR>
 noremap <leader>z :w<CR><C-Z>
-
 noremap <leader>W :wa<CR>
 noremap <leader>Q :qa!<CR>
 noremap <leader>X :xa<CR>
 noremap <leader>Z :wa<CR><C-Z>
 
-" buffer-oriented
+" travel buffers
 noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
 noremap <leader>d :bd<CR>
 noremap <leader>b :buffers<CR>:b
 
-" tab-oriented
+" travel tabs
 noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
 ",,
 noremap <leader><leader> :tabnext<CR>
@@ -112,8 +90,8 @@ noremap <leader><leader> :tabnext<CR>
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
-set tabpagemax=100
 
+" vertically split
 noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
 
 " <F2>: toggle paste mode
@@ -137,45 +115,18 @@ set nofoldenable
 noremap <silent> <F10> :set foldenable!<CR>
 imap <F10> <C-O><F10>
 
-" refine the arrow-keys
-
-noremap <down> g<down>
-noremap <up> g<up>
-imap <down> <C-O><down>
-imap <up> <C-O><up>
-
-noremap <C-down> 3<C-E>
-noremap <C-up> 3<C-Y>
-imap <C-down> <C-O><C-down>
-imap <C-up> <C-O><C-up>
-
 noremap <leader>h :set hlsearch!<CR>
-
-" TODO: let foldcolumn use the char like this
-set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ ,
-
-" hold shift to select and copy text
-set mouse=a
-
-set encoding=utf-8
-set listchars=tab:▹\ ,trail:▵
-set list
-
-" use gq to format the paragraph
-set textwidth=80
-set formatoptions=
-
-set foldmethod=syntax
-set foldnestmax=2
-
-" competition
-set completeopt=menu,menuone
-set pumheight=15
 
 autocmd BufNewFile,BufRead *.mako setlocal filetype=mako
 autocmd BufNewFile,BufRead */nginx/* setlocal filetype=nginx
 
 autocmd FileType python setlocal nosmartindent
+
+" return to last edit position when opening files
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
 
 " makes the docstring is foldable
 
@@ -197,3 +148,27 @@ let g:ctrlp_follow_symlinks=1
 " syntastic
 let g:syntastic_enable_signs=0
 let g:syntastic_python_checkers=['python']
+
+" don't backup
+set nobackup
+set nowb
+set noswapfile
+
+" configure backspace so it acts as it should act
+set backspace=eol,start,indent
+
+" move smoothly between lines
+set whichwrap=b,s,<,>,[,]
+
+" refine the arrow-keys
+noremap <down> g<down>
+noremap <up> g<up>
+imap <down> <C-O><down>
+imap <up> <C-O><up>
+noremap <C-down> 3<C-E>
+noremap <C-up> 3<C-Y>
+imap <C-down> <C-O><C-down>
+imap <C-up> <C-O><C-up>
+
+" don't redraw while executing macros (good performance config)
+set lazyredraw
