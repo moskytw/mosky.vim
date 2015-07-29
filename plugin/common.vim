@@ -132,7 +132,8 @@ set splitright
 noremap <F3> :vsplit<CR>
 imap <F3> <C-O><F3>
 
-" TODO: <F5>: execute program
+" <F5>: execute program
+noremap <F5> :!python %:p<CR>
 
 " <F7>: toggle spelling check
 noremap <silent> <F7> :set spell!<CR>
