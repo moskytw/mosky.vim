@@ -148,10 +148,8 @@ imap <F10> <C-O><F10>
 
 noremap <down> g<down>
 noremap <up> g<up>
-" the following two mapping are useful, but it is sad that they also break the
-" competition ...
-"imap <down> <C-O><down>
-"imap <up> <C-O><up>
+imap <down> <C-O><down>
+imap <up> <C-O><up>
 
 noremap <C-down> 3<C-E>
 noremap <C-up> 3<C-Y>
