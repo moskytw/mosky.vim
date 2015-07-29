@@ -96,19 +96,19 @@ let g:mapleader = ","
 
 " useful shortcuts
 
-noremap <leader>z :w<CR><C-Z>
 noremap <leader>w :w<CR>
-noremap <leader>x :x<CR>
 noremap <leader>q :q!<CR>
+noremap <leader>x :x<CR>
+noremap <leader>z :w<CR><C-Z>
 
-noremap <leader>Z :wa<CR><C-Z>
 noremap <leader>W :wa<CR>
-noremap <leader>X :xa<CR>
 noremap <leader>Q :qa!<CR>
+noremap <leader>X :xa<CR>
+noremap <leader>Z :wa<CR><C-Z>
 
+noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
 noremap <leader>d :bd<CR>
 noremap <leader>b :buffers<CR>:b
-noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
 
 noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
 
