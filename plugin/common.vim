@@ -43,7 +43,7 @@ set foldnestmax=2
 " for gq
 set formatoptions=
 
-" completion
+" <C-N>
 set completeopt=menu,menuone
 set pumheight=15
 
