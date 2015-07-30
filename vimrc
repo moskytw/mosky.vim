@@ -85,11 +85,13 @@ Plugin 'scrooloose/syntastic'
 
 " web
 Plugin 'othree/html5.vim'
-Plugin 'othree/yajs.vim'
+" make vim super slow
+"Plugin 'othree/yajs.vim'
 Plugin 'hail2u/vim-css3-syntax'
 "Plugin 'ap/vim-css-color'
 
 " more web
+" it also makes vim slow
 Plugin 'sophacles/vim-bundle-mako'
 Plugin 'moskytw/nginx-contrib-vim'
 
