@@ -166,8 +166,9 @@ set whichwrap=b,s,<,>,[,]
 " refine the arrow-keys
 noremap <down> g<down>
 noremap <up> g<up>
-imap <down> <C-O><down>
-imap <up> <C-O><up>
+" will break the completion menu
+"imap <down> <C-O><down>
+"imap <up> <C-O><up>
 noremap <C-down> 3<C-E>
 noremap <C-up> 3<C-Y>
 imap <C-down> <C-O><C-down>
