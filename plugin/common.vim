@@ -127,7 +127,6 @@ noremap <silent> <F10> :set foldenable!<CR>:set foldenable?<CR>
 imap <F10> <C-O><F10>
 
 autocmd BufNewFile,BufRead *.mako setlocal filetype=mako
-autocmd BufNewFile,BufRead /etc/nginx/* setlocal filetype=nginx
 
 " return to last edit position when opening files
 autocmd BufReadPost *

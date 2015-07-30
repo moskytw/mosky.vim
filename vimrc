@@ -91,7 +91,7 @@ Plugin 'hail2u/vim-css3-syntax'
 
 " more web
 Plugin 'mako.vim'
-Plugin 'nginx.vim'
+Plugin 'moskytw/nginx-contrib-vim'
 
 " omni completion for java
 "Plugin 'javacomplete'
