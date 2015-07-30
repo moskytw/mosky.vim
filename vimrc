@@ -83,24 +83,9 @@ Plugin 'majutsushi/tagbar'
 " :Errors
 Plugin 'scrooloose/syntastic'
 
-" Python
-" it has bad support on doctest
-"Plugin 'hdima/python-syntax'
-
-" web
+" syntax
 Plugin 'othree/html5.vim'
-" make vim super slow
-"Plugin 'othree/yajs.vim'
-Plugin 'hail2u/vim-css3-syntax'
-"Plugin 'ap/vim-css-color'
-
-" more web
-" it also makes vim slow
-Plugin 'sophacles/vim-bundle-mako'
 Plugin 'moskytw/nginx-contrib-vim'
-
-" omni completion for java
-"Plugin 'javacomplete'
 
 " Mosky's fav
 " put at the end to override the configs of plugins
