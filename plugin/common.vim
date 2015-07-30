@@ -60,8 +60,9 @@ set cursorline
 
 set colorcolumn=81
 
-" make <Ctrl-Z> work in insert mode
-inoremap <C-Z> <ESC><C-Z>
+" make Ctrl+Z work in insert mode
+" pressing Ctrl-O switches to normal mode for one command
+inoremap <C-Z> <C-O><C-Z>
 
 let mapleader = ","
 let g:mapleader = ","
@@ -93,50 +94,50 @@ endfor
 " use ,v split window with another file
 noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
 
+" use ,h to toggle highlight
+noremap <silent> <leader>h :set hlsearch!<CR>:set hlsearch?<CR>
+
 " <F2>: toggle paste mode
 set pastetoggle=<F2>
 noremap <F2> <F2>:set paste?<CR>
 
 " <F3>: add a vertical split
 set splitright
-noremap <F3> :vsplit<CR>
+noremap <silent> <F3> :vsplit<CR>
 imap <F3> <C-O><F3>
 
 " <F5>: execute program
 noremap <F5> :!python %:p<CR>
 
 " <F7>: toggle spelling check
-noremap <silent> <F7> :set spell!<CR>
+noremap <silent> <F7> :set spell!<CR>:set spell?<CR>
 imap <F7> <C-O><F7>
 
 " <F10>: toggle foldenable
 set nofoldenable
-noremap <silent> <F10> :set foldenable!<CR>
+noremap <silent> <F10> :set foldenable!<CR>:set foldenable?<CR>
 imap <F10> <C-O><F10>
 
-noremap <leader>h :set hlsearch!<CR>
-
 autocmd BufNewFile,BufRead *.mako setlocal filetype=mako
-autocmd BufNewFile,BufRead */nginx/* setlocal filetype=nginx
-
+autocmd BufNewFile,BufRead /etc/nginx/* setlocal filetype=nginx
 
 " return to last edit position when opening files
 autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
+\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\   exe "normal! g`\"" |
+\ endif
 
 " makes the docstring is foldable
 autocmd FileType python
-    \ syn region pythonString
-        \ start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
-        \ contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell
-        \ fold
-    \ |
-    \ syn region pythonRawString
-        \ start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
-        \ contains=pythonSpaceError,pythonDoctest,@Spell
-        \ fold
+\ syn region pythonString
+\     start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
+\     contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell
+\     fold
+\ |
+\ syn region pythonRawString
+\     start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
+\     contains=pythonSpaceError,pythonDoctest,@Spell
+\     fold
 
 " ctrlp.vim
 let g:ctrlp_clear_cache_on_exit=0
