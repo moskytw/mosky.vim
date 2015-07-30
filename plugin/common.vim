@@ -42,7 +42,7 @@ set foldnestmax=2
 " for gq
 set formatoptions=
 
-" <C-N>
+" Ctrl+N
 set completeopt=menu,menuone
 set pumheight=15
 
@@ -76,21 +76,21 @@ noremap <leader>Q :qa!<CR>
 noremap <leader>X :xa<CR>
 noremap <leader>Z :wa<CR><C-Z>
 
-" travel buffers
+" buffer
 noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
 noremap <leader>d :bd<CR>
 noremap <leader>b :buffers<CR>:b
 
-" travel tabs
+" tab
 noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
-",,
+" use ,, to go next tab
 noremap <leader><leader> :tabnext<CR>
-",1
+" use ,1 ,2 to go specific tab
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
 
-" vertically split
+" use ,v split window with another file
 noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
 
 " <F2>: toggle paste mode
@@ -127,7 +127,6 @@ autocmd BufReadPost *
      \ endif
 
 " makes the docstring is foldable
-
 autocmd FileType python
     \ syn region pythonString
         \ start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
