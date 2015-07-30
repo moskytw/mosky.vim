@@ -90,7 +90,7 @@ Plugin 'hail2u/vim-css3-syntax'
 "Plugin 'ap/vim-css-color'
 
 " more web
-Plugin 'mako.vim'
+Plugin 'sophacles/vim-bundle-mako'
 Plugin 'moskytw/nginx-contrib-vim'
 
 " omni completion for java
