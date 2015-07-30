@@ -18,7 +18,6 @@ set ignorecase
 set smartcase
 
 set autoindent
-set smartindent
 
 set shiftwidth=4
 set tabstop=4
@@ -120,7 +119,6 @@ noremap <leader>h :set hlsearch!<CR>
 autocmd BufNewFile,BufRead *.mako setlocal filetype=mako
 autocmd BufNewFile,BufRead */nginx/* setlocal filetype=nginx
 
-autocmd FileType python setlocal nosmartindent
 
 " return to last edit position when opening files
 autocmd BufReadPost *
