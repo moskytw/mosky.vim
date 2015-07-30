@@ -10,9 +10,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Mosky's fav
-Plugin 'moskytw/mosky.vim'
-
 " highlight the matched tag
 Plugin 'gregsexton/MatchTag'
 
@@ -95,6 +92,10 @@ Plugin 'nginx.vim'
 
 " omni completion for java
 "Plugin 'javacomplete'
+
+" Mosky's fav
+" put at the end to override the configs of plugins
+Plugin 'moskytw/mosky.vim'
 
 " --- end ---
 
