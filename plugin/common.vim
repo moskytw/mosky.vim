@@ -76,6 +76,14 @@ noremap <leader>W :wa<CR>
 noremap <leader>Q :qa!<CR>
 noremap <leader>X :xa<CR>
 noremap <leader>Z :wa<CR><C-Z>
+noremap <leader>! :w !sudo tee %:p > /dev/null<CR>
+
+" Q was to go ex mode
+" but ex mode is useless to us, so remap it
+noremap Q :qa
+
+" reedit
+noremap <leader>r :e!<CR>
 
 " buffer
 noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
