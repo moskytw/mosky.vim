@@ -84,7 +84,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 
 " Python
-Plugin 'hdima/python-syntax'
+" it has bad support on doctest
+"Plugin 'hdima/python-syntax'
 
 " web
 Plugin 'othree/html5.vim'
