@@ -83,6 +83,9 @@ Plugin 'majutsushi/tagbar'
 " :Errors
 Plugin 'scrooloose/syntastic'
 
+" Python
+Plugin 'hdima/python-syntax'
+
 " web
 Plugin 'othree/html5.vim'
 " make vim super slow
