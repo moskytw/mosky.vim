@@ -22,6 +22,9 @@ runtime macros/matchit.vim
 " use % to travel Python's if, elif, etc.
 Plugin 'python_match.vim'
 
+" use +/_ to expand/shrink visual selection
+Plugin 'terryma/vim-expand-region'
+
 " viI: an indent level (no lines above/below)
 " vii: an indent level (no lines above)
 " vai: an indent level + the above line
