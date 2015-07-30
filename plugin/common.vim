@@ -147,6 +147,10 @@ autocmd FileType python
 \     contains=pythonSpaceError,pythonDoctest,@Spell
 \     fold
 
+" vim-cute-python forgets it
+autocmd FileType python
+\ syntax match pythonOperator "\<is not\>"
+
 " ctrlp.vim
 let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_follow_symlinks=1
