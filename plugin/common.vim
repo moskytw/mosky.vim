@@ -133,13 +133,6 @@ imap <Leader>s <C-O><Leader>s
 set nofoldenable
 noremap <silent> <Leader>f :set foldenable!<CR>:set foldenable?<CR>
 imap <Leader>f <C-O><Leader>f
-
-" return to last edit position when opening files
-autocmd BufReadPost *
-\ if line("'\"") > 0 && line("'\"") <= line("$") |
-\   exe "normal! g`\"" |
-\ endif
-
 "" makes the docstring is foldable
 "autocmd FileType python
 "\ syn region pythonString
@@ -152,13 +145,18 @@ autocmd BufReadPost *
 "\     contains=pythonSpaceError,pythonDoctest,@Spell
 "\     fold
 
+" return to last edit position when opening files
+autocmd BufReadPost *
+\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\   exe "normal! g`\"" |
+\ endif
+
 " vim-cute-python forgets it
 autocmd FileType python
 \ syntax match pythonOperator "\<is not\>"
 
-" fix the mako highlight
-autocmd BufNewFile,BufRead *.mako
-\ setlocal filetype=html
+" UltiSnips
+let g:ultisnips_python_quoting_style='single'
 
 " ctrlp.vim
 let g:ctrlp_clear_cache_on_exit=0
@@ -168,8 +166,9 @@ let g:ctrlp_follow_symlinks=1
 let g:syntastic_enable_signs=0
 let g:syntastic_python_checkers=['python']
 
-" UltiSnips
-let g:ultisnips_python_quoting_style='single'
+" fix the mako highlight
+autocmd BufNewFile,BufRead *.mako
+\ setlocal filetype=html
 
 " don't backup
 set nobackup
