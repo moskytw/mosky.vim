@@ -155,6 +155,9 @@ autocmd BufReadPost *
 autocmd FileType python
 \ syntax match pythonOperator "\<is not\>"
 
+" easymotion
+map <Leader>m <Plug>(easymotion-prefix)
+
 " UltiSnips
 let g:ultisnips_python_quoting_style='single'
 

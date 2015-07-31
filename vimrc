@@ -22,6 +22,19 @@ runtime macros/matchit.vim
 " use % to travel Python's if, elif, etc.
 Plugin 'python_match.vim'
 
+" I map it to <Leader>m
+" <Leader>mw: select a beginning of word to jump
+" <Leader>mW: select a beginning of WORD to jump
+" <Leader>mf: select a right char to jump
+" <Leader>mF: select a left char to jump
+" <Leader>mj: select a line downward to jump
+" <Leader>mk: select a line forward to jump
+" and so on
+" <Leader>mn: select a latest / or ? to jump
+" <Leader>mN: select a latest / or ? to jump
+" <Leader>ms: select a right and left char to jump
+Plugin 'easymotion/vim-easymotion'
+
 " use +/_ to expand/shrink visual selection
 Plugin 'terryma/vim-expand-region'
 
