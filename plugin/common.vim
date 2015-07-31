@@ -68,46 +68,46 @@ let mapleader = ","
 let g:mapleader = ","
 
 " save
-noremap <leader>w :w<CR>
-noremap <leader>q :q!<CR>
-noremap <leader>x :x<CR>
-noremap <leader>z :w<CR><C-Z>
-noremap <leader>W :wa<CR>
-noremap <leader>Q :qa!<CR>
-noremap <leader>X :xa<CR>
-noremap <leader>Z :wa<CR><C-Z>
-noremap <leader>! :w !sudo tee %:p > /dev/null<CR>
+noremap <Leader>w :w<CR>
+noremap <Leader>q :q!<CR>
+noremap <Leader>x :x<CR>
+noremap <Leader>z :w<CR><C-Z>
+noremap <Leader>W :wa<CR>
+noremap <Leader>Q :qa!<CR>
+noremap <Leader>X :xa<CR>
+noremap <Leader>Z :wa<CR><C-Z>
+noremap <Leader>! :w !sudo tee %:p > /dev/null<CR>
 " usually we don't wanna go ex mode. just miss the leader key.
 noremap Q :qa
 
 " buffer
-noremap <leader>r :e!<CR>
-noremap <leader>e :edit <C-R>=expand("%:p:h")<CR>/
-noremap <leader>d :bd<CR>
-noremap <leader>b :buffers<CR>:b
+noremap <Leader>r :e!<CR>
+noremap <Leader>e :edit <C-R>=expand("%:p:h")<CR>/
+noremap <Leader>d :bd<CR>
+noremap <Leader>b :buffers<CR>:b
 
 " tab
-noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
+noremap <Leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
 " ,<tab>: go next tab
-noremap <leader><tab> :tabnext<CR>
+noremap <Leader><tab> :tabnext<CR>
 " ,1 ,2 ,3: go specific tab
 for i in range(1, 9)
-    exec 'nmap <leader>'.i.' '.i.'gt<CR>'
+    exec 'nmap <Leader>'.i.' '.i.'gt<CR>'
 endfor
 
 " split
 " ,v: split window with another file
 set splitright
-noremap <silent> <leader>v :vsplit<CR>
-imap <leader>v <C-O><leader>v
+noremap <silent> <Leader>v :vsplit<CR>
+imap <Leader>v <C-O><Leader>v
 
 " ,h: toggle highlight
-noremap <silent> <leader>h :set hlsearch!<CR>:set hlsearch?<CR>
+noremap <silent> <Leader>h :set hlsearch!<CR>:set hlsearch?<CR>
 
 " ,p: toggle paste mode
-set pastetoggle=<leader>p
+set pastetoggle=<Leader>p
 " for showing prompt
-noremap <leader>p <leader>p:set paste?<CR>
+noremap <Leader>p <Leader>p:set paste?<CR>
 
 " ,s: toggle spelling check
 " zg: mark word as good
@@ -119,8 +119,8 @@ noremap <leader>p <leader>p:set paste?<CR>
 " [S: move to prev bad word
 " zug: undo zg
 " zub: undo zu
-noremap <silent> <leader>s :set spell!<CR>:set spell?<CR>
-imap <leader>s <C-O><leader>s
+noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
+imap <Leader>s <C-O><Leader>s
 
 " ,f: toggle foldenable
 " zo: open one fold
@@ -132,8 +132,8 @@ imap <leader>s <C-O><leader>s
 " zj: move to next fold
 " zk: move to prev fold
 set nofoldenable
-noremap <silent> <leader>f :set foldenable!<CR>:set foldenable?<CR>
-imap <leader>f <C-O><leader>f
+noremap <silent> <Leader>f :set foldenable!<CR>:set foldenable?<CR>
+imap <Leader>f <C-O><Leader>f
 
 " return to last edit position when opening files
 autocmd BufReadPost *
