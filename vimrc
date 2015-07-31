@@ -51,10 +51,10 @@ Plugin 'michaeljsmith/vim-indent-object'
 " more: https://github.com/wellle/targets.vim/blob/master/cheatsheet.md
 Plugin 'wellle/targets.vim'
 
-" viwS'  : word   -> 'word'
-" ysiw'  : word   -> 'word'
-" cs'"   : 'word' -> "word"
-" ds"    : "word" -> word
+" viwS'  : word        -> 'word'
+" ysiw'  : word        -> 'word'
+" cs'"   : 'word'      -> "word"
+" ds"    : "word"      -> word
 " viwS<p>: word        -> <p>word</p>
 " ysiw<p>: word        -> <p>word</p>
 " cst<a> : <p>word</p> -> <a>word</a>
