@@ -65,7 +65,6 @@ set colorcolumn=81
 inoremap <C-Z> <C-O><C-Z>
 
 let mapleader = ","
-let g:mapleader = ","
 
 " save
 noremap <Leader>w :w<CR>
