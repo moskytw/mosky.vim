@@ -131,6 +131,14 @@ noremap <silent> <F7> :set spell!<CR>:set spell?<CR>
 imap <F7> <C-O><F7>
 
 " <F10>: toggle foldenable
+" zo: open one fold
+" zO: open all folds
+" zc: close one fold
+" zC: close all folds
+" za: toggle one fold
+" zA: toggle all folds
+" zj: move to next fold
+" zk: move to prev fold
 set nofoldenable
 noremap <silent> <F10> :set foldenable!<CR>:set foldenable?<CR>
 imap <F10> <C-O><F10>
