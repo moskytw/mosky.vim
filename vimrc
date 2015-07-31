@@ -82,6 +82,12 @@ Plugin 'tpope/vim-surround'
 "
 Plugin 'terryma/vim-multiple-cursors'
 
+" " find some equals signs
+" vap:Ta<Tab> /=<CR>
+" " find a text table
+" vap:Ta<Tab> /|<CR>
+Plugin 'godlygeek/tabular'
+
 " #!<Tab>
 " ifmain<Tab>
 Plugin 'SirVer/ultisnips'
