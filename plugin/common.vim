@@ -88,32 +88,28 @@ noremap <leader>b :buffers<CR>:b
 
 " tab
 noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
-" use ,, to go next tab
+" ,,: go next tab
 noremap <leader><leader> :tabnext<CR>
-" use ,1 ,2 to go specific tab
+" ,1 ,2 ,3: go specific tab
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
 endfor
 
-" use ,v split window with another file
-noremap <leader>v :vsplit <C-R>=expand("%:p:h")<CR>/
+" split
+" ,v: split window with another file
+set splitright
+noremap <silent> <leader>v :vsplit<CR>
+imap <leader>v <C-O><leader>v
 
-" use ,h to toggle highlight
+" ,h: toggle highlight
 noremap <silent> <leader>h :set hlsearch!<CR>:set hlsearch?<CR>
 
-" <F2>: toggle paste mode
-set pastetoggle=<F2>
-noremap <F2> <F2>:set paste?<CR>
+" ,p: toggle paste mode
+set pastetoggle=<leader>p
+" for showing prompt
+noremap <leader>p <leader>p:set paste?<CR>
 
-" <F3>: add a vertical split
-set splitright
-noremap <silent> <F3> :vsplit<CR>
-imap <F3> <C-O><F3>
-
-" <F5>: execute program
-noremap <F5> :!python %:p<CR>
-
-" <F7>: toggle spelling check
+" ,s: toggle spelling check
 " zg: mark word as good
 " zb: mark word as bad
 " z=: list suggestions
@@ -123,10 +119,10 @@ noremap <F5> :!python %:p<CR>
 " [S: move to prev bad word
 " zug: undo zg
 " zub: undo zu
-noremap <silent> <F7> :set spell!<CR>:set spell?<CR>
-imap <F7> <C-O><F7>
+noremap <silent> <leader>s :set spell!<CR>:set spell?<CR>
+imap <leader>s <C-O><leader>s
 
-" <F10>: toggle foldenable
+" ,f: toggle foldenable
 " zo: open one fold
 " zO: open all folds
 " zc: close one fold
@@ -136,8 +132,8 @@ imap <F7> <C-O><F7>
 " zj: move to next fold
 " zk: move to prev fold
 set nofoldenable
-noremap <silent> <F10> :set foldenable!<CR>:set foldenable?<CR>
-imap <F10> <C-O><F10>
+noremap <silent> <leader>f :set foldenable!<CR>:set foldenable?<CR>
+imap <leader>f <C-O><leader>f
 
 " return to last edit position when opening files
 autocmd BufReadPost *
