@@ -36,7 +36,7 @@ set list
 " TODO: let foldcolumn use the char like this
 set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ ,
 
-set foldmethod=syntax
+set foldmethod=indent
 set foldnestmax=2
 
 " for gq
@@ -149,17 +149,17 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
-" makes the docstring is foldable
-autocmd FileType python
-\ syn region pythonString
-\     start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
-\     contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell
-\     fold
-\ |
-\ syn region pythonRawString
-\     start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
-\     contains=pythonSpaceError,pythonDoctest,@Spell
-\     fold
+"" makes the docstring is foldable
+"autocmd FileType python
+"\ syn region pythonString
+"\     start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
+"\     contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell
+"\     fold
+"\ |
+"\ syn region pythonRawString
+"\     start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
+"\     contains=pythonSpaceError,pythonDoctest,@Spell
+"\     fold
 
 " vim-cute-python forgets it
 autocmd FileType python
