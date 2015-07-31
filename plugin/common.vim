@@ -148,6 +148,10 @@ autocmd FileType python
 autocmd FileType python
 \ syntax match pythonOperator "\<is not\>"
 
+" fix the mako highlight
+autocmd BufNewFile,BufRead *.mako
+\ setlocal filetype=html
+
 " ctrlp.vim
 let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_follow_symlinks=1
