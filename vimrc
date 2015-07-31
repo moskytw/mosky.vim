@@ -22,7 +22,7 @@ runtime macros/matchit.vim
 " use % to travel Python's if, elif, etc.
 Plugin 'python_match.vim'
 
-" I map it to <Leader>m
+"map <Leader>m <Plug>(easymotion-prefix)
 " <Leader>mw: select a beginning of word to jump
 " <Leader>mW: select a beginning of WORD to jump
 " <Leader>mf: select a right char to jump
