@@ -82,6 +82,7 @@ Plugin 'tpope/vim-surround'
 "
 Plugin 'terryma/vim-multiple-cursors'
 
+" :Tabularize /{pattern}
 " " find some equals signs
 " vap:Ta<Tab> /=<CR>
 " " find a text table
