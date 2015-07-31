@@ -88,8 +88,8 @@ noremap <leader>b :buffers<CR>:b
 
 " tab
 noremap <leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
-" ,,: go next tab
-noremap <leader><leader> :tabnext<CR>
+" ,<tab>: go next tab
+noremap <leader><tab> :tabnext<CR>
 " ,1 ,2 ,3: go specific tab
 for i in range(1, 9)
     exec 'nmap <leader>'.i.' '.i.'gt<CR>'
