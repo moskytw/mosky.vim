@@ -118,6 +118,15 @@ imap <F3> <C-O><F3>
 noremap <F5> :!python %:p<CR>
 
 " <F7>: toggle spelling check
+" zg: mark word as good
+" zb: mark word as bad
+" z=: list suggestions
+" ]s: move to next
+" [s: move to prev
+" ]S: move to next bad word
+" [S: move to prev bad word
+" zug: undo zg
+" zub: undo zu
 noremap <silent> <F7> :set spell!<CR>:set spell?<CR>
 imap <F7> <C-O><F7>
 
