@@ -7,21 +7,23 @@
 
 CONVENTIONAL_GROUP_NAMES = ['Comment', 'Constant', 'Identifier', 'Statement', 'PreProc', 'Type', 'Special', 'Underlined', 'Ignore', 'Error', 'Todo']
 
-VIM_GROUP_NAMES = ['ColorColumn', 'Conceal', 'Cursor', 'CursorIM', 'CursorColumn', 'CursorLine', 'Directory', 'DiffAdd', 'DiffChange', 'DiffDelete', 'DiffText', 'ErrorMsg', 'VertSplit', 'Folded', 'FoldColumn', 'SignColumn', 'IncSearch', 'LineNr', 'CursorLineNr', 'MatchParen', 'ModeMsg', 'MoreMsg', 'NonText', 'Normal', 'Pmenu', 'PmenuSel', 'PmenuSbar', 'PmenuThumb', 'Question', 'Search', 'SpecialKey', 'SpellBad', 'SpellCap', 'SpellLocal', 'SpellRare', 'StatusLine',
-'StatusLineNC', 'TabLine', 'TabLineFill', 'TabLineSel', 'Title', 'Visual', 'VisualNOS', 'WarningMsg', 'WildMenu', 'Menu', 'Scrollbar', 'Tooltip']
+VIM_GROUP_NAMES = ['ColorColumn', 'Conceal', 'Cursor', 'CursorIM', 'CursorColumn', 'CursorLine', 'Directory', 'DiffAdd', 'DiffChange', 'DiffDelete', 'DiffText', 'ErrorMsg', 'VertSplit', 'Folded', 'FoldColumn', 'SignColumn', 'IncSearch', 'LineNr', 'CursorLineNr', 'MatchParen', 'ModeMsg', 'MoreMsg', 'NonText', 'Normal', 'Pmenu', 'PmenuSel', 'PmenuSbar', 'PmenuThumb', 'Question', 'Search', 'SpecialKey', 'SpellBad', 'SpellCap', 'SpellLocal', 'SpellRare', 'StatusLine', 'StatusLineNC', 'TabLine', 'TabLineFill', 'TabLineSel', 'Title', 'Visual', 'VisualNOS', 'WarningMsg', 'WildMenu', 'Menu', 'Scrollbar', 'Tooltip']
 
 # --- end ---
 
-def gen_hi_clear(group_names):
+def print_hi_clear_for(group_names):
     for group_name in group_names:
         print 'hi clear %s' % group_name
 
-def gen_hi(group_names, **kargs):
-    attr = ' '.join('%s=%s' % (k, v) for k, v in sorted(kargs.items()))
+def print_hi_x_for(group_names, **key_arg_map):
+    key_arg_map_str = ' '.join(
+        '{0[0]}={0[1]}'.format(pair)
+        for pair in sorted(key_arg_map.iteritems())
+    )
     width = max(map(len, group_names))
-    templ = 'hi %%-%ds %s' % (width, attr)
+    tmpl = 'hi {{:{}}} {}'.format(width, key_arg_map_str)
     for group_name in group_names:
-        print templ % group_name
+        print tmpl.format(group_name)
 
 if __name__ == '__main__':
 
@@ -29,22 +31,23 @@ if __name__ == '__main__':
     print
     print '" clear conventional groups'
     print '" {{{'
-    gen_hi_clear(CONVENTIONAL_GROUP_NAMES)
+    print_hi_clear_for(CONVENTIONAL_GROUP_NAMES)
     print '" }}}'
     print
     print '" clear vim\'s groups'
     print '" {{{'
-    gen_hi_clear(VIM_GROUP_NAMES)
+    print_hi_clear_for(VIM_GROUP_NAMES)
     print '" }}}'
     print
+    # commented because hi clear is just enough
     #print '" set ctermfg=7 of all conventional groups'
     #print '" {{{'
-    #gen_hi(CONVENTIONAL_GROUP_NAMES, ctermfg=7)
+    #print_hi_x_for(CONVENTIONAL_GROUP_NAMES, ctermfg=7)
     #print '" }}}'
     #print
     #print '" set ctermfg=7 of all vim\'s groups'
     #print '" {{{'
-    #gen_hi(VIM_GROUP_NAMES, ctermfg=7)
+    #print_hi_x_for(VIM_GROUP_NAMES, ctermfg=7)
     #print '" }}}'
     #print
     print '" --- end ---'
