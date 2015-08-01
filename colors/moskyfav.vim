@@ -1,11 +1,8 @@
 " Vim color file
 " Maintainer: Mosky <mosky.tw@gmail.com>
 
-" NOTE: It does *NOT* check the compatibility at all.
+" reset everything
 
-" # Reset Everything
-
-" reset syntax and highlight to the default
 hi clear
 syntax reset
 
@@ -80,16 +77,15 @@ hi clear Tooltip
 
 " --- end ---
 
-" # Start to Set Colors
-" NOTE: It is useful to find the code of terminal's 256-color: http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
+" start to set colors
 
-" modifiy the output of :colorsheme
+" useful: http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
+
 let g:colors_name="moskyfav"
-
-" start to set the colors
 set background=dark
 
 " conventional groups
+
 hi Statement  ctermfg=222 cterm=bold
 hi Identifier ctermfg=120
 hi Comment    ctermfg=153
@@ -105,7 +101,8 @@ hi Ignore     ctermfg=240
 hi Error      ctermfg=88  ctermbg=231 cterm=reverse
 hi Todo       ctermfg=226 ctermbg=196 cterm=reverse
 
-" vim's groups
+" vim groups
+
 hi Normal       ctermfg=231
 hi Visual       ctermbg=238
 "hi VisualNOS
@@ -164,9 +161,11 @@ hi DiffText     ctermbg=130
 
 hi Title        ctermfg=228
 
-" GUI stuffs. I don't use GUI, so keep them clear.
+" GUI
+
 " hi Menu         ctermfg=253
 " hi Scrollbar    ctermfg=253
 " hi Tooltip      ctermfg=253
 
-" vim: set fdl=0 fdm=marker:
+
+" vim: set fdm=marker:
