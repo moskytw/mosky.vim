@@ -100,6 +100,9 @@ Plugin 'kien/ctrlp.vim'
 " :TagbarToggle
 Plugin 'majutsushi/tagbar'
 
+" :GundoToggle
+Plugin 'sjl/gundo.vim'
+
 " :Errors
 Plugin 'scrooloose/syntastic'
 
