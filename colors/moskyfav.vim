@@ -86,20 +86,26 @@ set background=dark
 
 " conventional groups
 
-hi Statement  ctermfg=222 cterm=bold
-hi Identifier ctermfg=120
-hi Comment    ctermfg=153
+" import
 hi PreProc    ctermfg=203
-
-hi Constant   ctermfg=217
-hi Special    ctermfg=193
-
+" def, if
+hi Statement  ctermfg=222 cterm=bold
+" <function name>, None, True, all
+hi Identifier ctermfg=120
+" C: int, long
 hi Type       ctermfg=228 cterm=bold
+" <int>, <str>
+hi Constant   ctermfg=217
+" \x00
+hi Special    ctermfg=193
+hi Comment    ctermfg=153
 
-hi Underlined cterm=underline
-hi Ignore     ctermfg=240
-hi Error      ctermfg=88  ctermbg=231 cterm=reverse
+" TODO, FIXME, XXX
 hi Todo       ctermfg=226 ctermbg=196 cterm=reverse
+hi Error      ctermfg=88  ctermbg=231 cterm=reverse
+
+hi Ignore     ctermfg=240
+hi Underlined cterm=underline
 
 " vim groups
 
