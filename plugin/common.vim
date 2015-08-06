@@ -173,6 +173,9 @@ noremap <silent> <Leader>E :Errors<CR>
 let g:syntastic_enable_signs=0
 let g:syntastic_python_checkers=['python']
 
+" fix the offical python indent
+let g:pyindent_open_paren=0
+
 " fix the mako highlight
 autocmd BufNewFile,BufRead *.mako
 \ setlocal filetype=html
