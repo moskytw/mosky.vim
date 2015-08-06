@@ -43,7 +43,6 @@ set foldnestmax=2
 set formatoptions=
 
 " Ctrl+N
-set completeopt=menu,menuone
 set pumheight=15
 
 set mouse=a
