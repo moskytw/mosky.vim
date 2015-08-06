@@ -163,7 +163,7 @@ let g:ultisnips_python_quoting_style='single'
 let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_follow_symlinks=1
 
-" syntastic
+" Syntastic
 let g:syntastic_enable_signs=0
 let g:syntastic_python_checkers=['python']
 
