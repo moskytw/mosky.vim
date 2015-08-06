@@ -98,9 +98,11 @@ Plugin 'honza/vim-snippets'
 Plugin 'kien/ctrlp.vim'
 
 " :TagbarToggle
+" <Leader>l
 Plugin 'majutsushi/tagbar'
 
 " :GundoToggle
+" <Leader>u
 Plugin 'sjl/gundo.vim'
 
 " :Errors
