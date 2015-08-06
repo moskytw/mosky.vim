@@ -130,6 +130,7 @@ noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
 " zk: move to prev fold
 set nofoldenable
 noremap <silent> <Leader>f :set foldenable!<CR>:set foldenable?<CR>
+
 "" makes the docstring is foldable
 "autocmd FileType python
 "\ syn region pythonString
