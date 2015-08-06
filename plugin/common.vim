@@ -98,7 +98,6 @@ endfor
 " ,v: split window with another file
 set splitright
 noremap <silent> <Leader>v :vsplit<CR>
-imap <Leader>v <C-O><Leader>v
 
 " ,h: toggle highlight
 noremap <silent> <Leader>h :set hlsearch!<CR>:set hlsearch?<CR>
@@ -119,7 +118,6 @@ noremap <Leader>p <Leader>p:set paste?<CR>
 " zug: undo zg
 " zub: undo zu
 noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
-imap <Leader>s <C-O><Leader>s
 
 " ,f: toggle foldenable
 " zo: open one fold
@@ -132,7 +130,6 @@ imap <Leader>s <C-O><Leader>s
 " zk: move to prev fold
 set nofoldenable
 noremap <silent> <Leader>f :set foldenable!<CR>:set foldenable?<CR>
-imap <Leader>f <C-O><Leader>f
 "" makes the docstring is foldable
 "autocmd FileType python
 "\ syn region pythonString
