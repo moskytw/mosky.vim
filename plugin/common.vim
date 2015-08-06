@@ -155,6 +155,14 @@ autocmd FileType python
 " EasyMotion
 map <Leader>m <Plug>(easymotion-prefix)
 
+" Tabularize
+" ref:
+" https://raw.githubusercontent.com/godlygeek/tabular/master/doc/Tabular.txt
+noremap <silent> <Leader>a= :Tabularize /=<CR>
+noremap <silent> <Leader>a; :Tabularize /:/l0l1<CR>
+" TODO: not so perfect
+noremap <silent> <Leader>at :Tabularize /[\|+].\?/l0<CR>
+
 " UltiSnips
 let g:ultisnips_python_quoting_style='single'
 
