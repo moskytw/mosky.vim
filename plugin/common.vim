@@ -154,6 +154,8 @@ autocmd FileType python
 
 " EasyMotion
 map <Leader>m <Plug>(easymotion-prefix)
+map <Leader>j <Plug>(easymotion-prefix)j
+map <Leader>k <Plug>(easymotion-prefix)k
 
 " Tabularize
 " ref:
