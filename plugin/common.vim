@@ -153,7 +153,7 @@ autocmd BufReadPost *
 autocmd FileType python
 \ syntax match pythonOperator "\<is not\>"
 
-" easymotion
+" EasyMotion
 map <Leader>m <Plug>(easymotion-prefix)
 
 " UltiSnips
