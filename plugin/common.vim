@@ -75,7 +75,7 @@ noremap <Leader>W :wa<CR>
 noremap <Leader>Q :qa!<CR>
 noremap <Leader>X :xa<CR>
 noremap <Leader>Z :wa<CR><C-Z>
-noremap <Leader>! :w !sudo tee %:p > /dev/null<CR>
+noremap <Leader>!w :w !sudo tee %:p > /dev/null<CR>
 " usually we don't wanna go ex mode. just miss the leader key.
 noremap Q :qa
 
