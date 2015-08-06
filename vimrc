@@ -106,6 +106,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'sjl/gundo.vim'
 
 " :Errors
+" <Leader>E
 Plugin 'scrooloose/syntastic'
 
 " syntax

@@ -170,6 +170,7 @@ noremap <silent> <Leader>l :TagbarToggle<CR>
 noremap <silent> <Leader>u :GundoToggle<CR>
 
 " Syntastic
+noremap <silent> <Leader>E :Errors<CR>
 let g:syntastic_enable_signs=0
 let g:syntastic_python_checkers=['python']
 
