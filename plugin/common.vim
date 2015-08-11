@@ -176,7 +176,7 @@ let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_follow_symlinks=1
 
 " Tagbar
-noremap <silent> <Leader>l :TagbarToggle<CR>
+noremap <silent> <Leader>a :TagbarToggle<CR>
 
 " Gundo
 noremap <silent> <Leader>u :GundoToggle<CR>
