@@ -165,7 +165,7 @@ map <Leader>k <Plug>(easymotion-prefix)k
 " ref:
 " https://raw.githubusercontent.com/godlygeek/tabular/master/doc/Tabular.txt
 noremap <silent> <Leader>a= :Tabularize / = /l0<CR>
-noremap <silent> <Leader>a; :Tabularize /: /l0<CR>
+noremap <silent> <Leader>a: :Tabularize /: /l0<CR>
 " TODO: not so perfect
 noremap <silent> <Leader>at :Tabularize /[\|+].\?/l0<CR>
 
