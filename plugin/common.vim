@@ -86,7 +86,8 @@ noremap <Leader>b :buffers<CR>:b
 
 " tab
 noremap <Leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
-" ,<tab>: go next tab
+" gt: next tab
+" gT: previous tab
 noremap <Leader><Tab> :tabnext<CR>
 " ,1 ,2 ,3: go specific tab
 for i in range(1, 9)
