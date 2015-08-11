@@ -37,7 +37,7 @@ set list
 set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ ,
 
 set foldmethod=indent
-set foldnestmax=2
+set foldnestmax=3
 
 " for gq
 set formatoptions=
