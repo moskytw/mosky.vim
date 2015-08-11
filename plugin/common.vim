@@ -142,6 +142,9 @@ noremap <silent> <Leader>f :set foldenable!<CR>:set foldenable?<CR>
 "\     contains=pythonSpaceError,pythonDoctest,@Spell
 "\     fold
 
+" ,g: toggle registers
+noremap <silent> <Leader>g :registers<CR>
+
 " return to last edit position when opening files
 autocmd BufReadPost *
 \ if line("'\"") > 0 && line("'\"") <= line("$") |
