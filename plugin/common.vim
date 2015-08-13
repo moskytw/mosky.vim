@@ -128,6 +128,10 @@ noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
 " zA: toggle folds recursively
 " zx: undo manually opened and closed folds
 " zX: like zx, also works when cursor is in a fold
+" zr: reduce one fold: foldlevel+=1
+" zR: reduce all folds: foldlevel=MAX
+" zm: fold more: foldlevel-=1
+" zM: fold all: foldlevel=0
 " zj: move to next fold
 " zk: move to prev fold
 set nofoldenable
