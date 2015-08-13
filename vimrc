@@ -99,6 +99,8 @@ Plugin 'kien/ctrlp.vim'
 
 " :TagbarToggle
 " <Leader>l
+" p : preview
+" s : trigger sort
 Plugin 'majutsushi/tagbar'
 
 " :GundoToggle
