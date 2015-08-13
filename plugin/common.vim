@@ -121,11 +121,11 @@ noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
 
 " ,f: toggle foldenable
 " zo: open one fold
-" zO: open all folds
+" zO: open folds recursively
 " zc: close one fold
-" zC: close all folds
+" zC: close folds recursively
 " za: toggle one fold
-" zA: toggle all folds
+" zA: toggle folds recursively
 " zj: move to next fold
 " zk: move to prev fold
 set nofoldenable
