@@ -120,12 +120,14 @@ noremap <Leader>p <Leader>p:set paste?<CR>
 noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
 
 " ,f: toggle foldenable
+" note the range of actions is only your cursor
 " zo: open one fold
 " zO: open all folds
 " zc: close one fold
 " zC: close all folds
 " za: toggle one fold
 " zA: toggle all folds
+" zx: re-apply foldlevel, then zv. it's useful.
 " zj: move to next fold
 " zk: move to prev fold
 set nofoldenable
