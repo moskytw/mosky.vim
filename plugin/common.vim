@@ -91,7 +91,7 @@ noremap <Leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
 noremap <Leader><Tab> :tabnext<CR>
 " ,1 ,2 ,3: go specific tab
 for i in range(1, 9)
-    exec 'nmap <Leader>'.i.' '.i.'gt<CR>'
+    exec 'nmap <Leader>'.i.' '.i.'gt'
 endfor
 
 " split
