@@ -132,7 +132,7 @@ hi WildMenu     cterm=reverse
 
 hi VertSplit    ctermfg=236
 hi ColorColumn  ctermfg=9
-" hi SignColumn
+"hi SignColumn
 
 hi MatchParen   ctermbg=22
 hi IncSearch    ctermbg=196
@@ -162,16 +162,16 @@ hi SpellLocal   term=underline ctermbg=14
 
 hi DiffAdd      ctermbg=22
 hi DiffDelete   ctermbg=88
-" hi DiffChange
+"hi DiffChange
 hi DiffText     ctermbg=130
 
 hi Title        ctermfg=228
 
 " GUI
 
-" hi Menu         ctermfg=253
-" hi Scrollbar    ctermfg=253
-" hi Tooltip      ctermfg=253
+"hi Menu         ctermfg=253
+"hi Scrollbar    ctermfg=253
+"hi Tooltip      ctermfg=253
 
 
 " vim: set fdm=marker:
