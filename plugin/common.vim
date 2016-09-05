@@ -47,7 +47,8 @@ set pumheight=15
 
 set mouse=a
 
-set encoding=utf-8
+" nvim: E905: Cannot set this option after startup: encoding=utf-8
+"set encoding=utf-8
 
 set tabpagemax=100
 
