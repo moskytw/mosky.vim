@@ -25,17 +25,20 @@ Plug 'kchmck/vim-coffee-script'
 " use % to travel Python's if, elif, etc.
 Plug 'python_match.vim'
 
-"map <Leader>m <Plug>(easymotion-prefix)
-" <Leader>mw: select a beginning of word to jump
-" <Leader>mW: select a beginning of WORD to jump
-" <Leader>mf: select a right char to jump
-" <Leader>mF: select a left char to jump
-" <Leader>mj: select a line downward to jump
-" <Leader>mk: select a line forward to jump
+" after :map <Leader><Leader> <Plug>(easymotion-prefix)
+" <Leader><Leader>w: select a beginning of word to jump
+" <Leader><Leader>W: select a beginning of WORD to jump
+" <Leader><Leader>f: select a right char to jump
+" <Leader><Leader>F: select a left char to jump
+" <Leader><Leader>j: select a line downward to jump
+" <Leader><Leader>k: select a line forward to jump
 " and so on
-" <Leader>mn: select a latest / or ? to jump
-" <Leader>mN: select a latest / or ? to jump
-" <Leader>ms: select a right and left char to jump
+" <Leader><Leader>n: select a latest / or ? to jump
+" <Leader><Leader>N: select a latest / or ? to jump
+" <Leader><Leader>s: select a right and left char to jump
+" more: :tabnew | h easymotion | only
+" or:
+" https://github.com/easymotion/vim-easymotion/blob/master/doc/easymotion.txt
 Plug 'easymotion/vim-easymotion'
 
 " --- selecting ---
@@ -47,25 +50,36 @@ Plug 'easymotion/vim-easymotion'
 " more: https://github.com/wellle/targets.vim/blob/master/cheatsheet.md
 Plug 'wellle/targets.vim'
 
-" viI: an indent level (no lines above/below)
-" vii: an indent level (no lines above)
-" vai: an indent level + the above line
-" vaI: an indent level + the above & below line
+" vaI: an indent level + the above & below line -- select a Ruby function
+" vai: an indent level + the above line -- select a Python function
+" vii: an indent level -- select lines in a Ruby or Python function
 Plug 'michaeljsmith/vim-indent-object'
 
 " use +/_ to expand/shrink visual selection
+" let g:expand_region_text_objects = {
+"       \ 'iw'  :0,
+"       \ 'iW'  :0,
+"       \ 'i"'  :0,
+"       \ 'i''' :0,
+"       \ 'i]'  :1, " Support nesting of square brackets
+"       \ 'ib'  :1, " Support nesting of parentheses
+"       \ 'iB'  :1, " Support nesting of braces
+"       \ 'il'  :0, " 'inside line'. Available through https://github.com/kana/vim-textobj-line
+"       \ 'ip'  :0,
+"       \ 'ie'  :0, " 'entire file'. Available through https://github.com/kana/vim-textobj-entire
+"       \ }
 Plug 'terryma/vim-expand-region'
 
 " --- editing ---
 
-" viwS'  : word        -> 'word'
-" ysiw'  : word        -> 'word'
-" cs'"   : 'word'      -> "word"
 " ds"    : "word"      -> word
-" viwS<p>: word        -> <p>word</p>
-" ysiw<p>: word        -> <p>word</p>
-" cst<a> : <p>word</p> -> <a>word</a>
 " dst    : <a>word</a> -> word
+" cs'"   : 'word'      -> "word"
+" cst<a> : <p>word</p> -> <a>word</a>
+" viwS'  : word        -> 'word'
+" viwS<p>: word        -> <p>word</p>
+" ysiw'  : word        -> 'word'
+" ysiw<p>: word        -> <p>word</p>
 " yss for entire line
 Plug 'tpope/vim-surround'
 
