@@ -85,7 +85,7 @@ autocmd BufNewFile,BufRead *.mako
 
 syntax on
 set t_Co=256
-color moskyfav2016
+color luthadel
 
 " vim-cute-python forgets them
 autocmd FileType python
