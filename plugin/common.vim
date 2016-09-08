@@ -48,21 +48,25 @@ set lazyredraw
 noremap <silent> <Leader>h :set hlsearch!<CR>:set hlsearch?<CR>
 
 " ,f: toggle foldenable
-" note the range of actions is only your cursor
+"
+" act with cursor
+" zj: move to next fold
+" zk: move to prev fold
 " zo: open one fold
 " zO: open folds recursively
 " zc: close one fold
-" zC: close folds recursively
+" zC: (select multiple lines) close folds recursively
 " za: toggle one fold
 " zA: toggle folds recursively
+"
+" act on a buffer
 " zx: undo manually opened and closed folds
 " zX: like zx, also works when cursor is in a fold
-" zr: reduce one fold: foldlevel+=1
-" zR: reduce all folds: foldlevel=MAX
-" zm: fold more: foldlevel-=1
-" zM: fold all: foldlevel=0
-" zj: move to next fold
-" zk: move to prev fold
+" zr: open one fold level: foldlevel+=1
+" zR: open all fold level: foldlevel=MAX
+" zm: close one fold level: foldlevel-=1
+" zM: close all fold level: foldlevel=0
+"
 set foldmethod=indent
 set foldnestmax=3
 set nofoldenable
@@ -105,12 +109,12 @@ noremap <Leader>d :bd<CR>
 " tab
 set tabpagemax=100
 noremap <Leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
-" gt: next tab
-" gT: previous tab
 " ,1 ,2 ,3: go specific tab
 for i in range(1, 9)
     exec 'noremap <Leader>'.i.' '.i.'gt'
 endfor
+" gt: next tab
+" gT: previous tab
 
 " split
 " ,v: split window with another file
