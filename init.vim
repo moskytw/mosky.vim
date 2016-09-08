@@ -40,8 +40,12 @@ Plug 'easymotion/vim-easymotion'
 
 " --- selecting ---
 
-" use +/_ to expand/shrink visual selection
-Plug 'terryma/vim-expand-region'
+" dIa: f(a, b, c) -> f(a, ,c)
+" dia: f(a, b, c) -> f(a,, c)
+" daa: f(a, b, c) -> f(a, c)
+" dAa: f(a, b, c) -> f(ac)
+" more: https://github.com/wellle/targets.vim/blob/master/cheatsheet.md
+Plug 'wellle/targets.vim'
 
 " viI: an indent level (no lines above/below)
 " vii: an indent level (no lines above)
@@ -49,12 +53,8 @@ Plug 'terryma/vim-expand-region'
 " vaI: an indent level + the above & below line
 Plug 'michaeljsmith/vim-indent-object'
 
-" dIa: f(a, b, c) -> f(a, ,c)
-" dia: f(a, b, c) -> f(a,, c)
-" daa: f(a, b, c) -> f(a, c)
-" dAa: f(a, b, c) -> f(ac)
-" more: https://github.com/wellle/targets.vim/blob/master/cheatsheet.md
-Plug 'wellle/targets.vim'
+" use +/_ to expand/shrink visual selection
+Plug 'terryma/vim-expand-region'
 
 " --- editing ---
 
