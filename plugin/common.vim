@@ -2,6 +2,8 @@
 filetype plugin on
 filetype indent on
 
+let mapleader = ","
+
 " sorted by displaying, opening, moving, editing, big plugins, and saving
 
 " --- displaying ---
@@ -41,7 +43,6 @@ set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\
 " don't redraw while executing macros (good performance config)
 set lazyredraw
 
-let mapleader = ","
 
 " ,h: toggle highlight
 noremap <silent> <Leader>h :set hlsearch!<CR>:set hlsearch?<CR>
@@ -96,20 +97,19 @@ autocmd FileType python
 " --- opening ---
 
 " buffer
-noremap <Leader>r :e!<CR>
 noremap <Leader>e :edit <C-R>=expand("%:p:h")<CR>/
-noremap <Leader>d :bd<CR>
+noremap <Leader>!e :edit!<CR>
 noremap <Leader>b :buffers<CR>:b
+noremap <Leader>d :bd<CR>
 
 " tab
 set tabpagemax=100
 noremap <Leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
 " gt: next tab
 " gT: previous tab
-noremap <Leader><Tab> :tabnext<CR>
 " ,1 ,2 ,3: go specific tab
 for i in range(1, 9)
-    exec 'nmap <Leader>'.i.' '.i.'gt'
+    exec 'noremap <Leader>'.i.' '.i.'gt'
 endfor
 
 " split
@@ -135,26 +135,26 @@ set ignorecase
 set smartcase
 set nowrapscan
 
+" ,c: clear search register
+noremap <silent> <Leader>c :let @/ = ''<CR>
+
 set mouse=a
 
 " refine the arrow-keys
 noremap <down> g<down>
 noremap <up> g<up>
-" will break the completion menu
-"imap <down> <C-O><down>
-"imap <up> <C-O><up>
-noremap <C-down> 3<C-E>
-noremap <C-up> 3<C-Y>
-imap <C-down> <C-O><C-down>
-imap <C-up> <C-O><C-up>
+noremap j gj
+noremap k gk
 
 " fix the offical python indent
 let g:pyindent_open_paren=0
 
 " EasyMotion
-map <Leader>m <Plug>(easymotion-prefix)
+map <Leader><Leader> <Plug>(easymotion-prefix)
 map <Leader>j <Plug>(easymotion-prefix)j
 map <Leader>k <Plug>(easymotion-prefix)k
+map <Leader>n <Plug>(easymotion-prefix)n
+map <Leader>N <Plug>(easymotion-prefix)N
 
 " --- editing ---
 
@@ -174,8 +174,8 @@ set backspace=eol,start,indent
 " ,p: toggle paste mode
 noremap <silent> <Leader>p :set paste!<CR>:set paste?<CR>
 
-" ,": toggle registers
-noremap <silent> <Leader>" :registers<CR>:put 
+" ,r: toggle registers
+noremap <silent> <Leader>r :registers<CR>:put 
 
 " ,s: toggle spelling check
 " zg: mark word as good
