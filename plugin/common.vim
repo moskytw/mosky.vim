@@ -43,9 +43,9 @@ set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\
 " don't redraw while executing macros (good performance config)
 set lazyredraw
 
-
-" ,h: toggle highlight
-noremap <silent> <Leader>h :set hlsearch!<CR>:set hlsearch?<CR>
+" use ,c instead
+"" ,h: toggle highlight
+"noremap <silent> <Leader>h :set hlsearch!<CR>:set hlsearch?<CR>
 
 " ,f: toggle foldenable
 "
@@ -193,13 +193,14 @@ noremap <silent> <Leader>r :registers<CR>:put
 " zub: undo zu
 noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
 
-" Tabularize
-" ref:
-" https://raw.githubusercontent.com/godlygeek/tabular/master/doc/Tabular.txt
-noremap <silent> <Leader>a= :Tabularize / = /l0<CR>
-noremap <silent> <Leader>a: :Tabularize /: /l0<CR>
-" TODO: not so perfect
-noremap <silent> <Leader>at :Tabularize /[\|+].\?/l0<CR>
+" Tabularize is hard to use, actually.
+"" Tabularize
+"" ref:
+"" https://raw.githubusercontent.com/godlygeek/tabular/master/doc/Tabular.txt
+"noremap <silent> <Leader>a= :Tabularize / = /l0<CR>
+"noremap <silent> <Leader>a: :Tabularize /: /l0<CR>
+"" TODO: not so perfect
+"noremap <silent> <Leader>at :Tabularize /[\|+].\?/l0<CR>
 
 " SirVer/ultisnips makes nvim 0.5s slower at startup, disable it for now
 "" UltiSnips
@@ -208,28 +209,33 @@ noremap <silent> <Leader>at :Tabularize /[\|+].\?/l0<CR>
 " hand-made snippets
 
 autocmd FileType python
-\ noremap <Leader><Leader>1 i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><CR><Esc>|
-\ noremap <Leader><Leader>i iif __name__ == '__main__':<CR><Esc>
+\ noremap <Leader>i1 i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><CR><Esc>|
+\ noremap <Leader>ii iif __name__ == '__main__':<CR><Esc>
 
 autocmd FileType html
-\ noremap <Leader><Leader>1 i<!DOCTYPE html><CR><Esc>
+\ noremap <Leader>i1 i<!DOCTYPE html><CR><Esc>
 
 " --- big plugins ---
 
-" ctrlp.vim
-let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_follow_symlinks=1
+" not using
+"" ctrlp.vim
+"let g:ctrlp_clear_cache_on_exit=0
+"let g:ctrlp_follow_symlinks=1
 
-" Tagbar
-noremap <silent> <Leader>a :TagbarToggle<CR>
+" not using
+"" Tagbar
+"noremap <silent> <Leader>a :TagbarToggle<CR>
 
-" Gundo
-noremap <silent> <Leader>u :GundoToggle<CR>
+" not using
+"" Gundo
+"noremap <silent> <Leader>u :GundoToggle<CR>
 
-" Syntastic
-noremap <silent> <Leader>E :Errors<CR>
-let g:syntastic_enable_signs=0
-let g:syntastic_python_checkers=['python']
+" not using
+"" Syntastic
+"" conflict!
+""noremap <silent> <Leader>E :Errors<CR>
+"let g:syntastic_enable_signs=0
+"let g:syntastic_python_checkers=['python']
 
 " --- saving ---
 
