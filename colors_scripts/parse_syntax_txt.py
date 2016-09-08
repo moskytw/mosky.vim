@@ -27,7 +27,6 @@ targets = [
 ]
 target_it = iter(targets)
 
-
 group_names_list = []
 line_it = iter([])
 target = None
@@ -76,4 +75,4 @@ print 'VIM_GROUP_NAMES = %r' % group_names_list[2]
 print
 print '# --- end ---'
 print
-print 'count: ', map(len, group_names_list)
+print 'counts: ', map(len, group_names_list)
