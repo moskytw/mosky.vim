@@ -1,5 +1,17 @@
-" https://github.com/junegunn/vim-plug#usage
+" Mosky's init.vim
+" ================
+"
+" Read the comments for useful plugins' keystrokes.
+"
+" It meets the unadorned requirements of Python development, but any feature
+" request or bug report is welcome. Send mail to Mosky <mosky.tw@gmail.com>.
+"
+" Copyright (c) 2016 Mosky Liu, and licensed under MIT:
+" https://opensource.org/licenses/MIT.
+"
 
+" use vim-plug to manage plugins, see https://github.com/junegunn/vim-plug#usage
+" for details
 call plug#begin('~/.config/nvim/plugged')
 
 " sorted by displaying, moving, selecting, editing, and big plugins

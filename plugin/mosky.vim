@@ -1,3 +1,19 @@
+" Mosky's Vim Config
+" ==================
+"
+" Read the comments for useful built-in and custom keystrokes. Use `:vert h
+" <option name>` to get more information.
+"
+" It meets the unadorned requirements of Python development, but any feature
+" request or bug report is welcome. Send mail to Mosky <mosky.tw@gmail.com>.
+"
+" It is heavily inspired by Amir Salihefendic's vimrc:
+" https://github.com/amix/vimrc
+"
+" Copyright (c) 2016 Mosky Liu, and licensed under MIT:
+" https://opensource.org/licenses/MIT.
+"
+
 " enable filetype plugins
 filetype plugin on
 filetype indent on
