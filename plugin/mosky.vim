@@ -46,7 +46,7 @@ set scrolloff=2
 set wildmenu
 set wildignore=*.o,*~,*.pyc
 
-" Ctrl-N
+" pum: PopUp Menu; the component triggered by Ctrl-N
 set pumheight=16
 
 set listchars=tab:▹\ ,trail:▵
@@ -144,6 +144,14 @@ autocmd BufReadPost *
 \ endif
 
 " --- moving ---
+
+" '': jump to the last place
+" ma: set mark 'a'
+" 'a: jump to mark 'a'
+" '<: go the beginning of the last selection
+" '>: go the end of the last selection
+"
+" m< ... m> gv: mark and select
 
 " move smoothly between lines
 set whichwrap=b,s,<,>,[,]
