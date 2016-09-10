@@ -1,11 +1,10 @@
 " “Luthadel” Vim Color Scheme
 " ===========================
 "
-" Luthadel is the capital of the Final Empire, which is one of my favorite
-" fantasy novels.
+" Luthadel is the capital of the Final Empire, one of the best fantasy novels.
 "
-" I built it with unadorned requirements on Python code, but any feature request
-" or bug report is welcome. Send mail to Mosky <mosky.tw@gmail.com>.
+" It meets the unadorned requirements of Python development, but any feature
+" request or bug report is welcome. Send mail to Mosky <mosky.tw@gmail.com>.
 "
 " Copyright (c) 2016 Mosky Liu, and licensed under MIT:
 " https://opensource.org/licenses/MIT.
