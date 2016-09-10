@@ -233,11 +233,11 @@ noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
 " hand-made snippets
 
 autocmd FileType python
-\ noremap <Leader>i1 i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><CR><Esc>|
-\ noremap <Leader>ii iif __name__ == '__main__':<CR><Esc>
+\ noremap <Leader>i1 i#!/usr/bin/env python<CR># -*- coding: utf-8 -*-<CR><CR><CR>|
+\ noremap <Leader>ii iif __name__ == '__main__':<CR>
 
 autocmd FileType html
-\ noremap <Leader>i1 i<!DOCTYPE html><CR><Esc>
+\ noremap <Leader>i1 i<!DOCTYPE html><CR><CR>
 
 " --- big plugins ---
 
