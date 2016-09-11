@@ -18,14 +18,9 @@
 filetype plugin on
 filetype indent on
 
-let mapleader = ","
-
 " sorted by displaying, opening, moving, editing, big plugins, and saving
 
 " --- displaying ---
-
-" nvim: E905: Cannot set this option after startup: encoding=utf-8
-"set encoding=utf-8
 
 set ruler
 set number
@@ -115,6 +110,11 @@ autocmd FileType python
 \ syntax match pythonOperator ">=\@!"
 
 " --- opening ---
+
+" nvim: E905: Cannot set this option after startup: encoding=utf-8
+"set encoding=utf-8
+
+let mapleader = ","
 
 " buffer
 noremap <Leader>e :edit <C-R>=expand("%:p:h")<CR>/
