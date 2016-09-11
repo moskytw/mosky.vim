@@ -1,7 +1,7 @@
 " Mosky's Vim Config
 " ==================
 "
-" Read the comments for useful built-in and custom keystrokes. Use `:vert h
+" Read the comments for the useful built-in and custom keystrokes. Use `:vert h
 " <option name>` to get more information.
 "
 " It meets the unadorned requirements of Python development, but any feature

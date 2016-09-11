@@ -1,7 +1,7 @@
 " Mosky's init.vim
 " ================
 "
-" Read the comments for useful plugins' keystrokes.
+" Read the comments for the useful plugins' keystrokes.
 "
 " It meets the unadorned requirements of Python development, but any feature
 " request or bug report is welcome. Send mail to Mosky <mosky.tw@gmail.com>.
