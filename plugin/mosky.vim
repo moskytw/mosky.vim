@@ -217,19 +217,6 @@ noremap <silent> <Leader>r :registers<CR>:put
 " zub: undo zu
 noremap <silent> <Leader>s :set spell!<CR>:set spell?<CR>
 
-" Tabularize is hard to use, actually.
-"" Tabularize
-"" ref:
-"" https://raw.githubusercontent.com/godlygeek/tabular/master/doc/Tabular.txt
-"noremap <silent> <Leader>a= :Tabularize / = /l0<CR>
-"noremap <silent> <Leader>a: :Tabularize /: /l0<CR>
-"" TODO: not so perfect
-"noremap <silent> <Leader>at :Tabularize /[\|+].\?/l0<CR>
-
-" SirVer/ultisnips makes nvim 0.5s slower at startup, disable it for now
-"" UltiSnips
-"let g:ultisnips_python_quoting_style='single'
-
 " hand-made snippets
 
 autocmd FileType python
@@ -241,25 +228,7 @@ autocmd FileType html
 
 " --- big plugins ---
 
-" not using
-"" ctrlp.vim
-"let g:ctrlp_clear_cache_on_exit=0
-"let g:ctrlp_follow_symlinks=1
-
-" not using
-"" Tagbar
-"noremap <silent> <Leader>a :TagbarToggle<CR>
-
-" not using
-"" Gundo
-"noremap <silent> <Leader>u :GundoToggle<CR>
-
-" not using
-"" Syntastic
-"" conflict!
-""noremap <silent> <Leader>E :Errors<CR>
-"let g:syntastic_enable_signs=0
-"let g:syntastic_python_checkers=['python']
+" no big plugin so far
 
 " --- saving ---
 

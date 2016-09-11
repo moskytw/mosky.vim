@@ -115,37 +115,9 @@ Plug 'tpope/vim-surround'
 "
 Plug 'terryma/vim-multiple-cursors'
 
-" :Tabularize /{pattern}
-" " find some equals signs
-" vap:Ta<Tab> /=<CR>
-" " find a text table
-" vap:Ta<Tab> /|<CR>
-"Plug 'godlygeek/tabular'
-
-" it makes nvim 0.5s slower at startup
-" #!<Tab>
-" ifmain<Tab>
-"Plug 'SirVer/ultisnips'
-"Plug 'honza/vim-snippets'
-
 " --- big plugins ---
 
-" <Ctrl-P>
-"Plug 'kien/ctrlp.vim'
-
-" :TagbarToggle
-" <Leader>l
-" p : preview
-" s : trigger sort
-"Plug 'majutsushi/tagbar'
-
-" :GundoToggle
-" <Leader>u
-"Plug 'sjl/gundo.vim'
-
-" :Errors
-" <Leader>E
-"Plugin 'scrooloose/syntastic'
+" no big plugin so far
 
 " Mosky's fav
 " put at the end to override the configs of plugins
