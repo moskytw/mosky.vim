@@ -175,7 +175,7 @@ noremap j gj
 noremap k gk
 
 " fix the offical python indent
-let g:pyindent_open_paren=0
+let pyindent_open_paren=0
 
 " EasyMotion
 map <Leader><Leader> <Plug>(easymotion-prefix)
