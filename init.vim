@@ -121,6 +121,6 @@ Plug 'terryma/vim-multiple-cursors'
 
 " Mosky's fav
 " put at the end to override the configs of plugins
-Plug 'moskytw/mosky.vim'
+Plug 'moskytw/mosky.vim', {'branch': 'nvim'}
 
 call plug#end()
