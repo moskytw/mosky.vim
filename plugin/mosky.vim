@@ -20,6 +20,10 @@ filetype indent on
 
 " sorted by displaying, opening, moving, editing, big plugins, and saving
 
+" -- global ---
+
+let mapleader = ","
+
 " --- displaying ---
 
 set ruler
@@ -113,8 +117,6 @@ autocmd FileType python
 
 " nvim: E905: Cannot set this option after startup: encoding=utf-8
 "set encoding=utf-8
-
-let mapleader = ","
 
 " buffer
 noremap <Leader>e :edit <C-R>=expand("%:p:h")<CR>/
