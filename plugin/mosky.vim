@@ -152,7 +152,7 @@ autocmd BufReadPost *
 " '<: go the beginning of the last selection
 " '>: go the end of the last selection
 "
-" m< ... m> gv: mark and select
+" m<jjjm>gv: mark and select
 
 " move smoothly between lines
 set whichwrap=b,s,<,>,[,]
