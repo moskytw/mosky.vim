@@ -117,7 +117,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 " --- big plugins ---
 
-" no big plugin so far
+" no big plugin for now
 
 " Mosky's fav
 " put at the end to override the configs of plugins

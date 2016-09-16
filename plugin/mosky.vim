@@ -228,7 +228,7 @@ autocmd FileType html
 
 " --- big plugins ---
 
-" no big plugin so far
+" no big plugin for now
 
 " --- saving ---
 
