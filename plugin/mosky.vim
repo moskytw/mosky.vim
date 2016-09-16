@@ -120,7 +120,6 @@ autocmd FileType python
 
 " buffer
 noremap <Leader>e :edit <C-R>=expand("%:p:h")<CR>/
-noremap <Leader>!e :edit!<CR>
 noremap <Leader>b :buffers<CR>:b
 noremap <Leader>d :bd<CR>
 
