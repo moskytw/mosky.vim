@@ -19,19 +19,19 @@ Install [vim-plug](https://github.com/junegunn/vim-plug), and
 ### Vim
 
 ```bash
-cp -i mosky.vim/init.vim ~/.vimrc
+$ cp -i mosky.vim/init.vim ~/.vimrc
 ```
 
 ### Neovim
 
 ```bash
-cp -i mosky.vim/init.vim ~/.config/nvim/init.vim
+$ cp -i mosky.vim/init.vim ~/.config/nvim/init.vim
 ```
 
 Finally,
 
 ```bash
-vim +:PlugInstall
+$ vim +:PlugInstall
 ```
 
 
@@ -59,8 +59,8 @@ and trigger the install command in Vim.
 1. [luthadel.vim](https://github.com/moskytw/luthadel.vim) – A simple but ardent
    Vim color scheme
 2. [nginx-contrib-vim](https://github.com/moskytw/nginx-contrib-vim) – Make Vim
-   have better nginx.conf support.
-3. [vim-color-scheme-template-generator](https://github.com/moskytw/vim-color-scheme-template-generator) – Generate Vim's color scheme template precisely.
+   have better nginx.conf support
+3. [vim-color-scheme-template-generator](https://github.com/moskytw/vim-color-scheme-template-generator) – Generate Vim's color scheme template precisely
 
 The plugin list includes the 1 and 2.
 
