@@ -6,7 +6,8 @@ It contains Mosky's Vim configuration and plugin list (in
 
 ## Keystrokes
 
-Read the [mosky.vim](https://github.com/moskytw/mosky.vim) and
+Read the
+[mosky.vim](https://github.com/moskytw/mosky.vim/blob/nvim/plugin/mosky.vim) and
 [init.vim](https://github.com/moskytw/mosky.vim/blob/nvim/init.vim) for the
 keystrokes.
 
