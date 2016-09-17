@@ -8,8 +8,8 @@ It's Mosky's Vim configuration and plugin list (in
 
 Read the
 [mosky.vim](https://github.com/moskytw/mosky.vim/blob/nvim/plugin/mosky.vim) and
-[init.vim](https://github.com/moskytw/mosky.vim/blob/nvim/init.vim) for the
-keystrokes.
+[init.vim](https://github.com/moskytw/mosky.vim/blob/nvim/init.vim) files for
+the keystrokes.
 
 
 ## Install Config and Plugins
