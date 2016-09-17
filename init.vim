@@ -12,7 +12,7 @@
 
 " use vim-plug to manage plugins, see https://github.com/junegunn/vim-plug#usage
 " for details
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged/')
 
 " sorted by displaying, moving, selecting, editing, and big plugins
 
