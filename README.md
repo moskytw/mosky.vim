@@ -20,6 +20,7 @@ Install [vim-plug](https://github.com/junegunn/vim-plug), and
 
 ```bash
 $ cp -i mosky.vim/init.vim ~/.vimrc
+$ sed -i s^~/.config/nvim/plugged/^~/.vim/plugged/^ ~/.vimrc
 ```
 
 ### Neovim
