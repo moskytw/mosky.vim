@@ -1,45 +1,68 @@
-Mosky's VIM Configuration
-=========================
+# Mosky's Vim
 
-It has two parts:
+It contains Mosky's Vim configuration and plugin list (in
+[vim-plug](https://github.com/junegunn/vim-plug) form).
 
-1. My own basic VIM configuration
-2. A list of VIM plugins I am using (in [Vundle][] format)
 
-Installation
-------------
+## Keystrokes
 
-### Install 1. Basic VIM Configuration
+Read the [mosky.vim](https://github.com/moskytw/mosky.vim) and
+[init.vim](https://github.com/moskytw/mosky.vim/blob/nvim/init.vim) for the
+keystrokes.
 
-You have two ways to install it.
 
-#### With Vundle
+## Install Both
 
-Add the following statement in your `.vimrc`:
+Install [vim-plug](https://github.com/junegunn/vim-plug), and
 
-    Bundle "moskytw/mosky.vim"
+### Vim
 
-Then, use [Vundle][] to install it:
+```bash
+cp -i mosky.vim/init.vim ~/.vimrc
+```
 
-    $ vim
-    :BundleInstall
+### Neovim
 
-#### With Git
+```bash
+cp -i mosky.vim/init.vim ~/.config/nvim/init.vim
+```
 
-If you are using the [Vundle][] or [pathgen][]:
+Finally,
 
-    $ git clone https://github.com/moskytw/mosky.vim ~/.vim/bundle/mosky.vim
+```bash
+vim +:PlugInstall
+```
 
-If you don't have any plugin manager, just download it and copy the files under `mosky.vim` to your `~/.vim` folder.
 
-### Install 2. VIM Plugins I Am Using
+## Install the Config Only
 
-The list of plugins is placed in `mosky.vim/vimrc`. Here are the steps to install all of the plugins:
+Put the line into your `.vimrc` or `init.vim`:
 
-    $ cd ~
-    $ ln -s .vim/bundle/mosky.vim/vimrc .vimrc
-    $ vim
-    :BundleInstall
+### vim-plug
 
-[Vundle]: https://github.com/gmarik/vundle/
-[pathgen]: https://github.com/tpope/vim-pathogen
+```vim
+Plug 'moskytw/mosky.vim'
+```
+
+### Vundle
+
+```vim
+Plugin 'moskytw/mosky.vim'
+```
+
+and trigger the install command in Vim.
+
+
+## Mosky's Vim Plugins and Projects
+
+1. [luthadel.vim](https://github.com/moskytw/luthadel.vim) – A simple but ardent
+   Vim color scheme
+2. [nginx-contrib-vim](https://github.com/moskytw/nginx-contrib-vim) – Make Vim
+   have better nginx.conf support.
+3. [vim-color-scheme-template-generator](https://github.com/moskytw/vim-color-scheme-template-generator) – Generate Vim's color scheme template precisely.
+
+
+## Report Issue
+
+It meets the unadorned requirements of Python development, but any feature
+request or bug report is welcome. Send mail to Mosky mosky.tw@gmail.com.
