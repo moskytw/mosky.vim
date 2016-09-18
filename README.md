@@ -9,7 +9,7 @@ It's Mosky's Vim configuration and plugin list (in
 Read the
 [mosky.vim](https://github.com/moskytw/mosky.vim/blob/master/plugin/mosky.vim) and
 [init.vim](https://github.com/moskytw/mosky.vim/blob/master/init.vim) files for
-the keystrokes.
+the useful built-in, Mosky's, and plugins' keystrokes.
 
 
 ## Install Config and Plugins
