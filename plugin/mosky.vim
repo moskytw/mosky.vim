@@ -75,8 +75,8 @@ set lazyredraw
 " zA: toggle folds recursively
 "
 " act on a buffer
-" zx: undo manually opened and closed folds
-" zX: like zx, also works when cursor is in a fold
+" zx: undo manually opened and closed folds, except the cursor line
+" zX: undo manually opened and closed folds
 " zr: open one fold level: foldlevel+=1
 " zR: open all fold level: foldlevel=MAX
 " zm: close one fold level: foldlevel-=1
