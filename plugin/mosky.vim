@@ -134,9 +134,11 @@ endfor
 " gT: previous tab
 
 " split
-" ,v: split window with another file
+" ,v: split vertically
+" ,h: split horizontally
 set splitright
 noremap <silent> <Leader>v :vsplit<CR>
+noremap <silent> <Leader>h :split<CR>
 
 " return to last edit position when opening files
 autocmd BufReadPost *
