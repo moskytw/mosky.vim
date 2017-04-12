@@ -29,7 +29,7 @@ let mapleader = ","
 set ruler
 set number
 
-set textwidth=80
+set textwidth=79
 set wrap
 set linebreak
 
@@ -37,7 +37,7 @@ set showmatch
 
 set cursorline
 
-set colorcolumn=81
+set colorcolumn=80
 
 " keep space from top and bottom
 set scrolloff=2
