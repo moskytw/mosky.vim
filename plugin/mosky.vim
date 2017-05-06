@@ -22,7 +22,7 @@ filetype indent on
 
 " -- global ---
 
-let mapleader = ","
+let mapleader = ','
 
 " --- displaying ---
 
@@ -119,13 +119,13 @@ autocmd FileType python
 "set encoding=utf-8
 
 " buffer
-noremap <Leader>e :edit <C-R>=expand("%:p:h")<CR>/
+noremap <Leader>e :edit <C-R>=expand('%:p:h')<CR>/
 noremap <Leader>b :buffers<CR>:b
 noremap <Leader>d :bd<CR>
 
 " tab
 set tabpagemax=100
-noremap <Leader>t :tabedit <C-R>=expand("%:p:h")<CR>/
+noremap <Leader>t :tabedit <C-R>=expand('%:p:h')<CR>/
 " ,1 ,2 ,3: go specific tab
 for i in range(1, 9)
     exec 'noremap <Leader>'.i.' '.i.'gt'
@@ -142,7 +142,7 @@ noremap <silent> <Leader>h :split<CR>
 
 " return to last edit position when opening files
 autocmd BufReadPost *
-\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\ if line("'\"") > 0 && line("'\"") <= line('$') |
 \   exe "normal! g`\"" |
 \ endif
 
