@@ -35,7 +35,7 @@ Plug 'kchmck/vim-coffee-script'
 " --- moving ---
 
 " use % to travel Python's if, elif, etc.
-Plug 'python_match.vim'
+Plug 'vim-scripts/python_match.vim'
 
 " after :map <Leader><Leader> <Plug>(easymotion-prefix)
 " <Leader><Leader>w: select a beginning of word to jump
