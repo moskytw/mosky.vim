@@ -24,8 +24,9 @@ runtime macros/matchit.vim
 " highlight the matched tag
 Plug 'gregsexton/MatchTag'
 
-" conceal lambda into λ, etc.
-Plug 'ehamberg/vim-cute-python'
+" TRYING_LIGATURES
+" " conceal lambda into λ, etc.
+" Plug 'ehamberg/vim-cute-python'
 
 " syntax
 Plug 'othree/html5.vim'

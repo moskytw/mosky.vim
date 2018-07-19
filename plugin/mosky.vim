@@ -107,21 +107,22 @@ syntax on
 set t_Co=256
 color luthadel
 
-" vim-cute-python forgets them, you can test with
-"
-" a > b
-" a < c
-" a >= b
-" a <= b
-" a == b
-" a is b
-" a is not b
-" not a == not b
-"
-autocmd FileType python
-\ syntax match pythonOperator '\<is not\>' |
-\ syntax match pythonOperator '<=\@!' |
-\ syntax match pythonOperator '>=\@!'
+" TRYING_LIGATURES
+" " vim-cute-python forgets them, you can test with
+" "
+" " a > b
+" " a < c
+" " a >= b
+" " a <= b
+" " a == b
+" " a is b
+" " a is not b
+" " not a == not b
+" "
+" autocmd FileType python
+" \ syntax match pythonOperator '\<is not\>' |
+" \ syntax match pythonOperator '<=\@!' |
+" \ syntax match pythonOperator '>=\@!'
 
 " --- opening ---
 
