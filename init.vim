@@ -1,12 +1,12 @@
 " Mosky's init.vim
 " ================
 "
-" Read the comments for the useful plugins' keystrokes.
+" Read the comments for the useful keystrokes of the plugins.
 "
 " It meets the unadorned requirements of Python development, but any feature
 " request or bug report is welcome. Send mail to Mosky <mosky.tw@gmail.com>.
 "
-" Copyright (c) 2016 Mosky Liu, and licensed under MIT:
+" Copyright (c) 2018 Mosky Liu, and licensed under MIT:
 " https://opensource.org/licenses/MIT.
 "
 
@@ -14,7 +14,7 @@
 " for details
 call plug#begin('~/.config/nvim/plugged/')
 
-" sorted by displaying, moving, selecting, editing, and big plugins
+" sorted by displaying, moving, selecting, editing, and Mosky's fav
 
 " --- displaying ---
 
@@ -24,7 +24,6 @@ runtime macros/matchit.vim
 " highlight the matched tag
 Plug 'gregsexton/MatchTag'
 
-" TRYING_LIGATURES
 " " conceal lambda into λ, etc.
 " Plug 'ehamberg/vim-cute-python'
 
@@ -116,12 +115,9 @@ Plug 'tpope/vim-surround'
 "
 Plug 'terryma/vim-multiple-cursors'
 
-" --- big plugins ---
+" --- Mosky's fav ---
 
-" no big plugin for now
-
-" Mosky's fav
-" put at the end to override the configs of plugins
+" put at the end to override the configs of the above plugins
 Plug 'moskytw/luthadel.vim'
 Plug 'moskytw/mosky.vim'
 

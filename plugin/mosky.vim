@@ -10,7 +10,7 @@
 " It is heavily inspired by Amir Salihefendic's vimrc:
 " https://github.com/amix/vimrc
 "
-" Copyright (c) 2016 Mosky Liu, and licensed under MIT:
+" Copyright (c) 2018 Mosky Liu, and licensed under MIT:
 " https://opensource.org/licenses/MIT.
 "
 
@@ -18,7 +18,7 @@
 filetype plugin on
 filetype indent on
 
-" sorted by displaying, opening, moving, editing, big plugins, and saving
+" sorted by global, displaying, opening, moving, editing, and saving
 
 " -- global ---
 
@@ -45,7 +45,7 @@ set scrolloff=2
 set wildmenu
 set wildignore=*.o,*~,*.pyc
 
-" pum: PopUp Menu; the component triggered by Ctrl-N
+" pum: PopUp Menu which is triggered by Ctrl-N in insert mode
 set pumheight=16
 
 set listchars=tab:▹\ ,trail:▵
@@ -58,13 +58,10 @@ set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\
 " don't redraw while executing macros (good performance config)
 set lazyredraw
 
-" use ,c instead
-"" ,h: toggle highlight
-"noremap <silent> <Leader>h :set hlsearch!<CR>:set hlsearch?<CR>
-
 " ,f: toggle foldenable
 "
 " act with cursor
+"
 " zj: move to next fold
 " zk: move to prev fold
 " zo: open one fold
@@ -75,6 +72,7 @@ set lazyredraw
 " zA: toggle folds recursively
 "
 " act on a buffer
+"
 " zx: undo manually opened and closed folds, except the cursor line
 " zX: undo manually opened and closed folds
 " zr: open one fold level: foldlevel+=1
@@ -87,17 +85,17 @@ set foldnestmax=3
 set nofoldenable
 noremap <silent> <Leader>f :set foldenable!<CR>:set foldenable?<CR>
 
-"" makes the docstring is foldable
-"autocmd FileType python
-"\ syn region pythonString
-"\     start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
-"\     contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell
-"\     fold
-"\ |
-"\ syn region pythonRawString
-"\     start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
-"\     contains=pythonSpaceError,pythonDoctest,@Spell
-"\     fold
+" " make docstrings foldable
+" autocmd FileType python
+" \ syn region pythonString
+" \     start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
+" \     contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell
+" \     fold
+" \ |
+" \ syn region pythonRawString
+" \     start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
+" \     contains=pythonSpaceError,pythonDoctest,@Spell
+" \     fold
 
 " fix the mako highlight
 autocmd BufNewFile,BufRead *.mako
@@ -107,7 +105,6 @@ syntax on
 set t_Co=256
 color luthadel
 
-" TRYING_LIGATURES
 " " vim-cute-python forgets them, you can test with
 " "
 " " a > b
@@ -207,6 +204,7 @@ set tabstop=4
 set expandtab
 set smarttab
 
+" TODO; refine the option
 " for gq
 set formatoptions=
 
@@ -239,10 +237,6 @@ autocmd FileType python
 
 autocmd FileType html
 \ noremap <Leader>i1 i<!DOCTYPE html><CR><CR>
-
-" --- big plugins ---
-
-" no big plugin for now
 
 " --- saving ---
 

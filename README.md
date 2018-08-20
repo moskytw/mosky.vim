@@ -7,9 +7,9 @@ It's Mosky's Vim configuration and plugin list (in
 ## Keystrokes
 
 Read the
-[mosky.vim](https://github.com/moskytw/mosky.vim/blob/master/plugin/mosky.vim) and
-[init.vim](https://github.com/moskytw/mosky.vim/blob/master/init.vim) files for
-the useful built-in, Mosky's, and plugins' keystrokes.
+[mosky.vim](https://github.com/moskytw/mosky.vim/blob/master/plugin/mosky.vim)
+and [init.vim](https://github.com/moskytw/mosky.vim/blob/master/init.vim) files
+for the useful built-in, Mosky's, and plugins' keystrokes.
 
 
 ## Install Config and Plugins
@@ -57,11 +57,12 @@ and trigger the install command in Vim.
 
 ## See Also
 
-1. [luthadel.vim](https://github.com/moskytw/luthadel.vim) – A simple but ardent
-   Vim color scheme
+1. [luthadel.vim](https://github.com/moskytw/luthadel.vim) – A simple but
+   ardent Vim color scheme
 2. [nginx-contrib-vim](https://github.com/moskytw/nginx-contrib-vim) – Make Vim
    have better nginx.conf support
-3. [vim-color-scheme-template-generator](https://github.com/moskytw/vim-color-scheme-template-generator) – Generate Vim's color scheme template precisely
+3. [vim-color-scheme-template-generator](https://github.com/moskytw/vim-color-scheme-template-generator)
+   – Generate Vim's color scheme template precisely
 
 The plugin list includes the 1 and 2.
 
