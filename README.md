@@ -12,7 +12,7 @@ and [init.vim](https://github.com/moskytw/mosky.vim/blob/master/init.vim) files
 for the useful built-in, Mosky's, and plugins' keystrokes.
 
 
-## Install Config and Plugins
+## Install the Configuration and Plugins
 
 Install [vim-plug](https://github.com/junegunn/vim-plug), and
 
@@ -36,7 +36,7 @@ $ vim +:PlugInstall
 ```
 
 
-## Install Config Only
+## Install the Configuration Only
 
 Put the line into your `.vimrc` or `init.vim`:
 
@@ -67,7 +67,7 @@ and trigger the install command in Vim.
 The plugin list includes the 1 and 2.
 
 
-## Report Issue
+## Report Issues
 
 It meets the unadorned requirements of Python development, but any feature
 request or bug report is welcome. Just file an issue on GitHub.
