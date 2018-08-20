@@ -1,4 +1,4 @@
-# Mosky's Vim Config and Plugins
+# Mosky's Vim Configuration and Plugin List
 
 It's Mosky's Vim configuration and plugin list (in
 [vim-plug](https://github.com/junegunn/vim-plug) form).
