@@ -144,7 +144,7 @@ endfor
 " split
 " ,v: split vertically
 " ,h: split horizontally
-" set splitright
+set splitright
 noremap <silent> <Leader>v :vsplit<CR>
 noremap <silent> <Leader>h :split<CR>
 
