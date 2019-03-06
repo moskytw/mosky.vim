@@ -101,6 +101,8 @@ noremap <silent> <Leader>f :set foldenable!<CR>:set foldenable?<CR>
 autocmd BufNewFile,BufRead *.mako
 \ setlocal filetype=html
 
+set hlsearch
+
 syntax on
 set t_Co=256
 color luthadel
