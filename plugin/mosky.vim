@@ -30,33 +30,25 @@ set ruler
 set number
 
 set textwidth=79
+set colorcolumn=80
 set wrap
 set linebreak
 
-set showmatch
-
 set cursorline
+set showmatch
+set hlsearch
 
-set colorcolumn=80
+set list
+set listchars=tab:▹\ ,trail:▵
+
+" pum: PopUp Menu which is triggered by Ctrl-N in insert mode
+set pumheight=16
 
 " keep space from top and bottom
 set scrolloff=2
 
 set wildmenu
 set wildignore=*.o,*~,*.pyc
-
-" pum: PopUp Menu which is triggered by Ctrl-N in insert mode
-set pumheight=16
-
-set listchars=tab:▹\ ,trail:▵
-set list
-" TODO: let foldcolumn use the char like this
-" stl: status line for current window
-" stlnc: status line for non-current window
-set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ 
-
-" don't redraw while executing macros (good performance config)
-set lazyredraw
 
 " ,f: toggle foldenable
 "
@@ -97,15 +89,21 @@ noremap <silent> <Leader>f :set foldenable!<CR>:set foldenable?<CR>
 " \     contains=pythonSpaceError,pythonDoctest,@Spell
 " \     fold
 
+" TODO: let foldcolumn use the char like this
+" stl: status line for current window
+" stlnc: status line for non-current window
+set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:\ ,diff:\ 
+
 " fix the mako highlight
 autocmd BufNewFile,BufRead *.mako
 \ setlocal filetype=html
 
-set hlsearch
-
 syntax on
 set t_Co=256
 color luthadel
+
+" don't redraw while executing macros (good performance config)
+set lazyredraw
 
 " " vim-cute-python forgets them, you can test with
 " "
