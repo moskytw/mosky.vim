@@ -36,6 +36,7 @@ set linebreak
 
 set cursorline
 set showmatch
+" default off in vim, but default on in nvim
 set hlsearch
 
 set list
