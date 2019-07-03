@@ -10,9 +10,6 @@
 " It is heavily inspired by Amir Salihefendic's vimrc:
 " https://github.com/amix/vimrc
 "
-" Copyright (c) 2018 Mosky Liu, and licensed under MIT:
-" https://opensource.org/licenses/MIT.
-"
 
 " enable filetype plugins
 filetype plugin on
