@@ -1,4 +1,5 @@
-# Mosky's Vim Configuration and Plugin List
+# Mosky's Vim
 
-See https://github.com/moskytw/mosky-misc-configs/blob/master/src/vimrc for the
-latest version.
+This repo is merged into
+[moskytw/mosky-mini-configs](https://github.com/moskytw/mosky-mini-configs).
+Check there for the latest version!
